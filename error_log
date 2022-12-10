@@ -1,0 +1,58 @@
+[19-Nov-2022 23:46:20 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 57
+[19-Nov-2022 23:47:19 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 57
+[19-Nov-2022 23:48:50 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 57
+[19-Nov-2022 23:49:12 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 57
+[19-Nov-2022 23:54:20 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:56:23 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:57:30 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:58:24 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:58:35 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:59:06 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[19-Nov-2022 23:59:14 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[20-Nov-2022 00:00:28 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[20-Nov-2022 00:01:32 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[20-Nov-2022 00:02:21 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 58
+[20-Nov-2022 00:02:52 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 61
+[20-Nov-2022 00:04:01 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 61
+[20-Nov-2022 00:05:51 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[20-Nov-2022 00:05:52 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 91
+[20-Nov-2022 00:06:11 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[20-Nov-2022 00:06:12 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 91
+[20-Nov-2022 00:06:30 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[20-Nov-2022 00:06:31 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[20-Nov-2022 00:07:14 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[20-Nov-2022 00:07:15 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[20-Nov-2022 00:08:40 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 60
+[20-Nov-2022 00:08:49 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[20-Nov-2022 00:08:50 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[21-Nov-2022 16:01:11 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[21-Nov-2022 16:01:12 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[21-Nov-2022 16:01:45 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[21-Nov-2022 16:01:46 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[22-Nov-2022 13:56:18 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[22-Nov-2022 13:56:19 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[22-Nov-2022 17:54:52 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[22-Nov-2022 17:54:53 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[07-Dec-2022 11:01:01 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[07-Dec-2022 11:01:02 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[07-Dec-2022 11:01:13 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 60
+[07-Dec-2022 11:18:08 America/New_York] PHP Notice:  Undefined index: status in /home/tekhubs/public_html/dashboard/auth-signin.php on line 60
+[07-Dec-2022 11:18:58 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[07-Dec-2022 11:18:59 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[09-Dec-2022 12:42:10 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[09-Dec-2022 12:42:12 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
+[09-Dec-2022 14:00:11 America/New_York] PHP Notice:  Undefined variable: options in /home/tekhubs/public_html/dashboard/auth-signin.php on line 89
+[09-Dec-2022 14:00:12 America/New_York] PHP Warning:  file_get_contents(https://homemod.code7labs.com/api/login): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in /home/tekhubs/public_html/dashboard/auth-signin.php on line 90
