@@ -4,6 +4,7 @@
   <?php
   include 'header.php';
   ?>
+     <?php include 'connection.php'; ?>
   </head>
   
 
@@ -57,10 +58,19 @@
                             </div>
                         </div>
                     </div><!-- Row end  -->
-
+                    <?php
+                   $sql = "SELECT COUNT(id) AS users FROM users";
+                   $result = mysqli_query($conn, $sql) or die("Query Un successfully");
+                   if(mysqli_num_rows($result) > 0) {
+                      ?>
+                      
+                                                                   
+        <?php
+                      while($row = mysqli_fetch_assoc($result)){
+                        ?>
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12">
-                            <div class="tab-filter d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                            <!-- <div class="tab-filter d-flex align-items-center justify-content-between mb-3 flex-wrap">
                                 <ul class="nav nav-tabs tab-card tab-body-header rounded  d-inline-flex w-sm-100">
                                     <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#summery-today" >Today</a></li>
                                     <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#summery-week" >Week</a></li>
@@ -72,7 +82,7 @@
                                         <input type="date" class="form-control">
                                         <button class="btn btn-primary" type="button"><i class="icofont-filter fs-5"></i></button>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="tab-content mt-1">
                                 <div class="tab-pane fade show active" id="summery-today">
@@ -82,7 +92,7 @@
                                                 <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
                                                     <div class="left-info">
                                                         <span class="text-muted">Customers</span>
-                                                        <div><span class="fs-6 fw-bold me-2">14,208</span></div>
+                                                        <div><span class="fs-6 fw-bold me-2"><?php echo $row['users'];?></span></div>
                                                     </div>
                                                     <div class="right-icon">
                                                         <i class="icofont-student-alt fs-3 color-light-orange"></i>
@@ -575,7 +585,10 @@
                             </div>
                         </div>
                     </div><!-- Row end  -->
-
+                    <?php 
+                    }}
+                      
+                      ?>
                     <div class="row g-3 mb-3">
                         <div class="col-xxl-8 col-xl-8">
                             <div class="card mb-3">

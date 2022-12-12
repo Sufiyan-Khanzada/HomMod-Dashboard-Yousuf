@@ -1,3 +1,8 @@
+<?php
+
+if(!$_GET['id']==''){
+
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -5,6 +10,7 @@
   <?php
   include 'header.php';
   ?>
+    <?php include 'connection.php'; ?>
   </head>
           
 
@@ -18,7 +24,23 @@
                             </div>
                         </div>
                     </div> <!-- Row end  -->
+                    
                     <div class="row g-3 mb-xl-3">
+                         <?php
+                    $sql = "SELECT * FROM  users where id=".$_GET['id'];
+                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
+                    if(mysqli_num_rows($result) > 0) {
+                    }
+                    ?>
+                     <?php
+                     
+                while($row = mysqli_fetch_assoc($result)){
+                    
+                    
+                   
+
+                ?>
+                
                         <div class="col-xxl-4 col-xl-12 col-lg-12 col-md-12">
                             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-1 row-deck g-3">
                                 <div class="col">
@@ -32,58 +54,67 @@
                                                     <img src="assets/images/lg/avatar4.svg" alt="" class="avatar xl rounded img-thumbnail shadow-sm">
                                                 </a>
                                                 <div class="about-info d-flex align-items-center mt-3 justify-content-center flex-column">
-                                                    <span class="text-muted small">ID : #CS-00002</span>
+                                                    <span class="text-muted small">  <?php echo $row['id'];?></span>
                                                 </div>
                                             </div>
                                             <div class="profile-info w-100">
-                                                <h6  class="mb-0 mt-2  fw-bold d-block fs-6 text-center"> Joan Dyer</h6>
-                                                <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted text-center mx-auto d-block">24 years, California</span>
-                                                <p class="mt-2">Duis felis ligula, pharetra at nisl sit amet, ullamcorper fringilla mi. Cras luctus metus non enim porttitor sagittis. Sed tristique scelerisque arcu id dignissim.</p>
+                                                <h6  class="mb-0 mt-2  fw-bold d-block fs-6 text-center"> <?php echo $row['name'];?></h6>
+                                                <!-- <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted text-center mx-auto d-block"><?php echo $row['city'];?></span> -->
+                                                <!--<p class="mt-2">Duis felis ligula, pharetra at nisl sit amet, ullamcorper fringilla mi. Cras luctus metus non enim porttitor sagittis. Sed tristique scelerisque arcu id dignissim.</p>-->
                                                 <div class="row g-2 pt-2">
                                                     <div class="col-xl-12">
                                                         <div class="d-flex align-items-center">
                                                             <i class="icofont-ui-touch-phone"></i>
-                                                            <span class="ms-2">202-555-0174 </span>
+                                                            <span class="ms-2"><?php echo $row['lastname'];?></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-12">
                                                         <div class="d-flex align-items-center">
                                                             <i class="icofont-email"></i>
-                                                            <span class="ms-2">adrianallan@gmail.com</span>
+                                                            <span class="ms-2"><?php echo $row['email'];?></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-12">
-                                                        <div class="d-flex align-items-center">
-                                                            <i class="icofont-birthday-cake"></i>
-                                                            <span class="ms-2">19/03/1980</span>
-                                                        </div>
+                                                        <!-- <div class="d-flex align-items-center">
+                                                            <i class="icofont-country"></i>
+                                                            <span class="ms-2"><?php echo $row['country'];?></span>
+                                                        </div> -->
                                                     </div>
                                                     <div class="col-xl-12">
-                                                        <div class="d-flex align-items-center">
+                                                        <!-- <div class="d-flex align-items-center">
                                                             <i class="icofont-address-book"></i>
-                                                            <span class="ms-2">2734  West Fork Street,EASTON 02334.</span>
-                                                        </div>
+                                                            <span class="ms-2"><?php echo $row['address'];?></span>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="col">
                                     <div class="card">
                                         <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
-                                            <h6 class="mb-0 fw-bold ">Expence Count</h6>
+                                            <h6 class="mb-0 fw-bold ">Revenue</h6>
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex justify-content-end text-center">
                                                 <div class="p-2">
                                                     <h6 class="mb-0 fw-bold">$1790</h6>
-                                                    <span class="text-muted">Total</span>
+                                                    <span class="text-muted">Income</span>
                                                 </div>
-                                                <div class="p-2 ms-4">
-                                                    <h6 class="mb-0 fw-bold">$149.16</h6>
-                                                    <span class="text-muted">Avg Month</span>
+                                                 <div class="p-2 ms-4">
+                                                    <h6 class="mb-0 fw-bold">$1790</h6>
+                                                    <span class="text-muted">Commission</span>
                                                 </div>
+                                                 <div class="p-2 ms-4">
+                                                    <h6 class="mb-0 fw-bold">$1790</h6>
+                                                    <span class="text-muted">Earning</span>
+                                                </div>
+                                                <!--<div class="p-2 ms-4">-->
+                                                <!--    <h6 class="mb-0 fw-bold">$149.16</h6>-->
+                                                <!--    <span class="text-muted">Avg Month</span>-->
+                                                <!--</div>-->
                                             </div>
                                             <div id="apex-circle-gradient"></div>
                                             <div class="row">
@@ -108,50 +139,50 @@
                                 </div>
                             </div>
                             <div class="card mt-3">
-                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
-                                    <h6 class="mb-0 fw-bold ">Status report</h6>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-4">
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <h6 class="mb-0">54</h6>
-                                                <span class="small text-muted">Product Visit</span>
-                                            </div>
-                                            <div class="progress" style="height: 2px;">
-                                                <div class="progress-bar bg-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87" data-transitiongoal="87"  style="width: 87%;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-4">
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <h6 class="mb-0">27</h6>
-                                                <span class="small text-muted">Product Buy</span>
-                                            </div>
-                                            <div class="progress" style="height: 2px;">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="34" data-transitiongoal="34"  style="width: 34%;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-4">
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <h6 class="mb-0">102</h6>
-                                                <span class="small text-muted">Comment on Product</span>
-                                            </div>
-                                            <div class="progress" style="height: 2px;">
-                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14" data-transitiongoal="14"  style="width: 14%;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-0">
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <h6 class="mb-0">1024 Hours</h6>
-                                                <span class="small text-muted">Total spent time</span>
-                                            </div>
-                                            <div class="progress" style="height: 2px;">
-                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67" data-transitiongoal="67"  style="width: 67%;"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> 
+                            <!--    <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">-->
+                            <!--        <h6 class="mb-0 fw-bold ">Status report</h6>-->
+                            <!--    </div>-->
+                            <!--    <div class="card-body">-->
+                            <!--        <ul class="list-unstyled mb-0">-->
+                            <!--            <li class="mb-4">-->
+                            <!--                <div class="d-flex justify-content-between align-items-center mb-2">-->
+                            <!--                    <h6 class="mb-0">54</h6>-->
+                            <!--                    <span class="small text-muted">Product Visit</span>-->
+                            <!--                </div>-->
+                            <!--                <div class="progress" style="height: 2px;">-->
+                            <!--                    <div class="progress-bar bg-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87" data-transitiongoal="87"  style="width: 87%;"></div>-->
+                            <!--                </div>-->
+                            <!--            </li>-->
+                            <!--            <li class="mb-4">-->
+                            <!--                <div class="d-flex justify-content-between align-items-center mb-2">-->
+                            <!--                    <h6 class="mb-0">27</h6>-->
+                            <!--                    <span class="small text-muted">Product Buy</span>-->
+                            <!--                </div>-->
+                            <!--                <div class="progress" style="height: 2px;">-->
+                            <!--                    <div class="progress-bar bg-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="34" data-transitiongoal="34"  style="width: 34%;"></div>-->
+                            <!--                </div>-->
+                            <!--            </li>-->
+                            <!--            <li class="mb-4">-->
+                            <!--                <div class="d-flex justify-content-between align-items-center mb-2">-->
+                            <!--                    <h6 class="mb-0">102</h6>-->
+                            <!--                    <span class="small text-muted">Comment on Product</span>-->
+                            <!--                </div>-->
+                            <!--                <div class="progress" style="height: 2px;">-->
+                            <!--                    <div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14" data-transitiongoal="14"  style="width: 14%;"></div>-->
+                            <!--                </div>-->
+                            <!--            </li>-->
+                            <!--            <li class="mb-0">-->
+                            <!--                <div class="d-flex justify-content-between align-items-center mb-2">-->
+                            <!--                    <h6 class="mb-0">1024 Hours</h6>-->
+                            <!--                    <span class="small text-muted">Total spent time</span>-->
+                            <!--                </div>-->
+                            <!--                <div class="progress" style="height: 2px;">-->
+                            <!--                    <div class="progress-bar bg-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67" data-transitiongoal="67"  style="width: 67%;"></div>-->
+                            <!--                </div>-->
+                            <!--            </li>-->
+                            <!--        </ul>-->
+                            <!--    </div>-->
+                            <!--</div> -->
                         </div>
                         <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12">
                             <div class="row g-3 mb-3 row-cols-1 row-cols-md-1 row-cols-lg-2 row-deck"> 
@@ -319,3 +350,12 @@
             <?php
   include 'footer.php';
   ?>
+  <?php
+}}
+else {
+
+
+  echo "<script>alert('ID Not Found');</script>";
+}
+
+?>

@@ -1,5 +1,7 @@
 <?php
 
-$conn =mysqli_connect('localhost','root','','') or die ("connection Failed");
+$conn =mysqli_connect('localhost','root','','homemod') or die ("connection Failed");
 
-?>  
+?>   
+
+
