@@ -5,6 +5,7 @@
   <?php
   include 'header.php';
   ?>
+    <?php include 'connection.php'; ?>
   </head>
 
             <!-- Body: Body -->
@@ -186,39 +187,39 @@
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">  
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="title" class="form-control">
                                             </div>
                                             <div class="col-md-6">
                                                 <label  class="form-label">Color</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="color" class="form-control">
                                             </div>
                                             <div class="col-md-12">
                                                 <label  class="form-label">Short Description</label>
-                                                <textarea type="text" class="form-control"></textarea>
+                                                <textarea type="text" name="short_description" class="form-control"></textarea>
                                             </div>
                                             <div class="col-md-12">
                                                 <label  class="form-label">Long Description</label>
-                                                <textarea type="text" class="form-control"></textarea>
+                                                <textarea type="text"  name="long_description" class="form-control"></textarea>
                                             </div>
                                             <div class="col-md-6">
                                                 <label  class="form-label">Normal Price</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="normal_price" class="form-control">
                                             </div>
                                             <div class="col-md-6">
                                                 <label  class="form-label">Sale Price</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="sale_price" class="form-control">
                                             </div>
                                             <div class="col-md-6">
                                                 <label  class="form-label">How To Use</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name= "how_to_use" class="form-control">
                                             </div>
                                             <div class="col-md-6">
                                                 <label  class="form-label">Stock Available</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="stock_available" class="form-control">
                                             </div>
                                             <!-- <div class="col-md-12">
                                                 <label class="form-label">Product Identifier URL</label>
@@ -234,7 +235,7 @@
                                                 </div> -->
                                             </div>
                                         </div>
-                                    </form>
+                                 
                                     
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Images</h6>
@@ -245,48 +246,56 @@
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image1" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image2" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file"  name="image3" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image4"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image5"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image6"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image7"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image8"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="image9"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
+                                       <<div>
+                                       <button type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
+                            <span>Create</span>
+                            <i data-cs-icon="send"></i>
+                            </button>
+                            </form>
+                                       </div>
+                                     
                                             <!-- <div class="col-md-12">
                                                 <label  class="form-label w-100">Select Product Color</label>
                                                 <input type="color" id="color">
