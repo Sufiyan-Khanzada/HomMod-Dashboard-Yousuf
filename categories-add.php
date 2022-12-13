@@ -161,11 +161,11 @@
                                                     <div class="mb-3"></div>
                                                     </div> -->
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                <br>
                                                
                                               
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                 <label class="form-label">Main Cat Pic</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
                                                 <input type="file" name="main_cat_pic"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
