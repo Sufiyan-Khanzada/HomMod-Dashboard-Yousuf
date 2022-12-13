@@ -15,12 +15,12 @@ if(isset($_POST['updatevid']))
 $main_category = $_POST['main_category'];
 $sub_category = $_POST['sub_category'];
 $sub_category1 = $_POST['sub_category1'];
-$main_category1 = $_POST['main_category1'];
+// $main_category1 = $_POST['main_category1'];
 $main_cat_pic = $_POST['main_cat_pic'];
     
 
 $query="UPDATE categories SET main_category='$main_category',sub_category='$sub_category', 
-sub_category1='$sub_category1',main_category1='$main_category1',main_cat_pic='$main_cat_pic' WHERE id='$upd_id'";
+sub_category1='$sub_category1',main_cat_pic='$main_cat_pic' WHERE id='$upd_id'";
 $result_query=mysqli_query($conn,$query);
 
 if($result_query){
@@ -121,7 +121,7 @@ $msg="<div class='alert alert-danger'>
 <option value="C-Black">C-Black</option>
 </select>
   <br>
-  <label class="form-label">Main Category1</label>
+  <!-- <label class="form-label">Main Category1</label>
                                              
                                              <div class="form-label" data-childselector="span">
 
@@ -132,11 +132,16 @@ $msg="<div class='alert alert-danger'>
 <option value="Sub1">Sub1</option>
 <option value="Sub2">Sub2</option>
 </select>
-<br>
+<br> -->
 
-<label class="form-label">Main Cat Pic</label>
-                                             
-                                             <div class="form-label" data-childselector="span">
+   
+                     
+                     <div class="col-md-6">
+                                                <label class="form-label">Main Cat Pic</label>
+                                                <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
+                                                <input type="file" name="main_cat_pic"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                            </div>                   
+                                             <!-- <div class="form-label" data-childselector="span">
 
 <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="main_cat_pic" value="<?php  echo $row['main_cat_pic']?>">
 
@@ -144,7 +149,7 @@ $msg="<div class='alert alert-danger'>
  <option value="Main">Main</option>
  <option value="Cat-Sub1">Cat-Sub1</option>
 <option value="Cat-Sub2">Cat-Sub2</option>
-</select>
+</select> -->
 <br>
   <div class="mb-3">
 </div>

@@ -39,7 +39,7 @@
                                                 <th>Sub Category</th>
                                                 <th>Sub Category1</th>
                                                 <th>Main Cat pic</th>
-                                                <th>Main Category 1</th>
+                                                <!-- <th>Main Category 1</th> -->
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -53,7 +53,7 @@
                                                 <td><?php echo $row['sub_category'];?></td>
                                                 <td><?php echo $row['sub_category'];?></td>
                                                 <td><?php echo $row['main_cat_pic'];?></td>
-                                                <td><?php echo $row['main_category1'];?></td>
+                                                <!-- <td><?php echo $row['main_category1'];?></td> -->
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                                         <a href='Edit-categories.php ?id=<?php echo $row['id']; ?>' class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>

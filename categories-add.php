@@ -146,7 +146,7 @@
                                                     <div class="mb-3"></div>
                                                     </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <!-- <div class="col-md-6">
                                                <br>
                                                <br>
                                                 <label class="form-label">Main Category1</label>
@@ -159,26 +159,22 @@
                                                       </select>
                                                       <br>
                                                     <div class="mb-3"></div>
-                                                    </div>
+                                                    </div> -->
                                             </div>
                                             <div class="col-md-6">
                                                <br>
-                                               <br>
+                                               
+                                              
+                                                <div class="col-md-6">
                                                 <label class="form-label">Main Cat Pic</label>
-                                                <div class="form-label" data-childselector="span">
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="main_cat_pic" >
-                                                      <option>Main Cat Pic</option>  
-                                                        <option value="Main">Main</option>
-                                                        <option value="Cat-Sub1">Cat-Sub1</option>
-                                                        <option value="Cat-Sub2">Cat-Sub2</option>
-                                                      </select>
-                                                      <br>
-                                                    <div class="mb-3"></div>
-                                                    </div>
+                                                <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
+                                                <input type="file" name="main_cat_pic"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                            </div>
                                             </div>
 
                                           
                                             <div>
+                                            <br>
                                        <button type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
                             <span>Create</span>
                             <i data-cs-icon="send"></i>
