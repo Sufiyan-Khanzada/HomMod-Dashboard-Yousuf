@@ -5,21 +5,14 @@
   <?php
   include 'header.php';
   ?>
+<?php include 'connection.php'; ?>
   </head>                <!-- Menu: menu collepce btn -->
                 
             <!-- Body: Body -->
             <div class="body d-flex py-3">
                 <div class="container-xxl">
 
-                    <div class="row align-items-center">
-                        <div class="border-0 mb-4">
-                            <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                                <h3 class="fw-bold mb-0">Categories Add</h3>
-                                <button type="submit" class="btn btn-primary py-2 px-5 text-uppercase btn-set-task w-sm-100">Save</button>
-                            </div>
-                        </div>
-                    </div> <!-- Row end  -->  
-                    
+                  
                     <div class="row g-3 mb-3">
                         <div class="col-lg-4">
                             <div class="sticky-lg-top">
@@ -98,11 +91,11 @@
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                <form class="post-form" action="add-categories.php" method="post" enctype="multipart/form-data"> 
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name ="main_category" class="form-control">
                                             </div>
                                             <div class="col-md-6">
                                                <br>
@@ -126,11 +119,11 @@
                                              
                                                 <div class="form-label" data-childselector="span">
 
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="user" >
+                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="sub_category" >
                                                       <option>Sub Category</option>  
                                                         <option value="Main">Main</option>
-                                                        <option value="Sub1">Sub1</option>
-                                                        <option value="Sub2">Sub1</option>
+                                                        <option value="White">White </option>
+                                                        <option value="Black">Black</option>
                                                       </select>
                                                       <br>
                                                     <div class="mb-3"></div>
@@ -143,11 +136,11 @@
                                              
                                                 <div class="form-label" data-childselector="span">
 
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="user" >
+                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="sub_category1" >
                                                       <option>Sub Category1</option>  
                                                         <option value="Main">Main</option>
-                                                        <option value="Sub1">Sub1</option>
-                                                        <option value="Sub2">Sub1</option>
+                                                        <option value="C-White">C-White</option>
+                                                        <option value="C-Black">C-Black</option>
                                                       </select>
                                                       <br>
                                                     <div class="mb-3"></div>
@@ -158,11 +151,11 @@
                                                <br>
                                                 <label class="form-label">Main Category1</label>
                                                 <div class="form-label" data-childselector="span">
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="user" >
+                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="main_category1" >
                                                       <option>Main Category</option>  
                                                         <option value="Main">Main</option>
                                                         <option value="Sub1">Sub1</option>
-                                                        <option value="Sub2">Sub1</option>
+                                                        <option value="Sub2">Sub2</option>
                                                       </select>
                                                       <br>
                                                     <div class="mb-3"></div>
@@ -173,126 +166,99 @@
                                                <br>
                                                 <label class="form-label">Main Cat Pic</label>
                                                 <div class="form-label" data-childselector="span">
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="user" >
+                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="main_cat_pic" >
                                                       <option>Main Cat Pic</option>  
                                                         <option value="Main">Main</option>
-                                                        <option value="Sub1">Sub1</option>
-                                                        <option value="Sub2">Sub1</option>
+                                                        <option value="Cat-Sub1">Cat-Sub1</option>
+                                                        <option value="Cat-Sub2">Cat-Sub2</option>
                                                       </select>
                                                       <br>
                                                     <div class="mb-3"></div>
                                                     </div>
                                             </div>
 
-                                            <div class="col-md-6">
-                                               <br>
-                                               <br>
-                                                <label class="form-label">Main Category1</label>
-                                                <div class="form-label" data-childselector="span">
-                                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="user" >
-                                                      <option>Main Category</option>  
-                                                        <option value="Main">Main</option>
-                                                        <option value="Sub1">Sub1</option>
-                                                        <option value="Sub2">Sub1</option>
-                                                      </select>
-                                                      <br>
-                                                    <div class="mb-3"></div>
-                                                    </div>
-                                            </div>
+                                          
+                                            <div>
+                                       <button type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
+                            <span>Create</span>
+                            <i data-cs-icon="send"></i>
+                            </button>
+                            </form>
+                                       </div>
                                             <div class="col-md-12">
-                                                <label class="form-label">Product Identifier URL</label>
+                                                <!-- <label class="form-label">Product Identifier URL</label>
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text">https://sofia.com</span>
                                                     <input type="text" class="form-control">
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="col-md-12">
-                                                <label class="form-label">Product Description</label>
+                                                <!-- <label class="form-label">Product Description</label>
                                                 <div id="editor">
                                                     <h4>Please add Product Description here</h4>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header py-3 bg-transparent border-bottom-0">
+                                <!-- <div class="card-header py-3 bg-transparent border-bottom-0">
                                     <h6 class="m-0 fw-bold">Cropped Images</h6>
                                     <small>If You Cropped Images Please Upload and croppd easily.</small>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-3 mb-3">
+                                </div> -->
+                                <!-- <div class="card-body"> -->
+                                    <!-- <div class="row g-3 mb-3">
                                         <div class="col-xxl-12 col-xl-12 col-lg-12">
                                             <div class="img-container">
                                                 <img id="image" src="assets/images/product/upload.png" class="img-responsive" alt="Picture">
-                                            </div>
-                                        </div>
+                                            </div> -->
+                                        <!-- </div> -->
                                         <div class="col-xxl-12 col-xl-12 col-lg-12">
                                             <div class="docs-preview clearfix">
-                                                <div class="img-preview preview-lg"></div>
+                                                <!-- <div class="img-preview preview-lg"></div>
                                                 <div class="img-preview preview-md"></div>
                                                 <div class="img-preview preview-sm"></div>
-                                                <div class="img-preview preview-xs"></div>
+                                                <div class="img-preview preview-xs"></div> -->
                                             </div>                                
                                             <div class="docs-data">
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                    <!-- <div class="input-group-prepend">
                                                         <span class="input-group-text">X</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataX" placeholder="x">
-                                                    <div class="input-group-append">
+                                                    </div> -->
+                                                    <!-- <input type="text" class="form-control" id="dataX" placeholder="x"> -->
+                                                    <!-- <div class="input-group-append">
                                                         <span class="input-group-text">PX</span>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                    <!-- <div class="input-group-prepend">
                                                         <span class="input-group-text">Y</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataY" placeholder="y">
-                                                    <div class="input-group-append">
+                                                    </div> -->
+                                                    <!-- <input type="text" class="form-control" id="dataY" placeholder="y"> -->
+                                                    <!-- <div class="input-group-append">
                                                         <span class="input-group-text">PX</span>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                    <!-- <div class="input-group-prepend">
                                                         <span class="input-group-text">Width</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataWidth" placeholder="width">
-                                                    <div class="input-group-append">
+                                                    </div> -->
+                                                    <!-- <input type="text" class="form-control" id="dataWidth" placeholder="width"> -->
+                                                    <!-- <div class="input-group-append">
                                                         <span class="input-group-text">PX</span>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                    <!-- <div class="input-group-prepend">
                                                         <span class="input-group-text">Height</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataHeight" placeholder="height">
-                                                    <div class="input-group-append">
+                                                    </div> -->
+                                                    <!-- <input type="text" class="form-control" id="dataHeight" placeholder="height"> -->
+                                                    <!-- <div class="input-group-append">
                                                         <span class="input-group-text">PX</span>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">Rotate</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataRotate" placeholder="rotate">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">Deg</span>
-                                                    </div>
-                                                </div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">ScaleX</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataScaleX" placeholder="scaleX">
-                                                </div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">ScaleY</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="dataScaleY" placeholder="scaleY">
-                                                </div>
+                                               
                                                 <!-- /.pixels of image -->
                                             </div>
                                         </div>
@@ -300,7 +266,7 @@
                                     <div class="row g-3">
                                         <div class="col-lg-8 col-md-12 docs-buttons">
                                             <!-- .btn groups -->
-                                            <button type="button" class="btn btn-sm btn-info" data-method="setDragMode" data-option="move" title="Move"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)"> <i class="icofont-drag1"></i> </span></button>
+                                            <!-- <button type="button" class="btn btn-sm btn-info" data-method="setDragMode" data-option="move" title="Move"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)"> <i class="icofont-drag1"></i> </span></button>
                                             <button type="button" class="btn btn-sm btn-info" data-method="setDragMode" data-option="crop" title="Crop"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setDragMode&quot;, &quot;crop&quot;)"> <i class="icofont-crop"></i> </span></button>
                     
                                             <button type="button" class="btn btn-sm btn-success" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;zoom&quot;, 0.1)"> <i class="icofont-ui-zoom-in"></i> </span></button>
@@ -345,122 +311,14 @@
                                             <button type="button" class="btn btn-secondary" data-method="moveTo" data-option="0"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.moveTo(0)"> 0,0 </span> </button>
                                             <button type="button" class="btn btn-secondary" data-method="zoomTo" data-option="1"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.zoomTo(1)"> 100% </span> </button>
                                             <button type="button" class="btn btn-secondary" data-method="rotateTo" data-option="180"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.rotateTo(180)"> 180° </span> </button>
-                                            <input type="text" class="form-control" id="putData" placeholder="Get data to here or set data with this value">
+                                            <input type="text" class="form-control" id="putData" placeholder="Get data to here or set data with this value"> -->
                                         </div>
                                         <div class="col-lg-4 col-md-12 docs-toggles">
                                             <!-- .btn groups -->
-                                            <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                                <label class="btn btn-secondary active">
-                                                    <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio" value="1.7777777777777777">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 16 / 9"> 16:9 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio" value="1.3333333333333333">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 4 / 3"> 4:3 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio" value="1">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 1 / 1"> 1:1 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio" value="0.6666666666666666">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 2 / 3"> 2:3 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio" value="NaN">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: NaN"> Free </span> </label>
-                                            </div>
-                                            <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                                <label class="btn btn-secondary active">
-                                                    <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0" checked>
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="View Mode 0"> VM0 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="viewMode1" name="viewMode" value="1">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="View Mode 1"> VM1 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="viewMode2" name="viewMode" value="2">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="View Mode 2"> VM2 </span> </label>
-                                                <label class="btn btn-secondary">
-                                                    <input type="radio" class="sr-only" id="viewMode3" name="viewMode" value="3">
-                                                    <span class="docs-tooltip" data-toggle="tooltip" title="View Mode 3"> VM3 </span> </label>
-                                            </div>
+                                            
+                                          
                                             <div class="dropdown dropup docs-options">
-                                                <button type="button" class="btn btn-success btn-block dropdown-toggle" id="toggleOptions" data-bs-toggle="dropdown" aria-expanded="true"> Toggle Options <span class="caret"></span> </button>
-                                                
-                                                <ul class="dropdown-menu" aria-labelledby="toggleOptions" role="menu">
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="responsive" checked> responsive </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="restore" checked> restore </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="checkCrossOrigin" checked> checkCrossOrigin </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="checkOrientation" checked> checkOrientation </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="modal" checked> modal </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="guides" checked> guides </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="center" checked> center </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="highlight" checked> highlight </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="background" checked> background </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="autoCrop" checked> autoCrop </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="movable" checked> movable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="rotatable" checked> rotatable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="scalable" checked> scalable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="zoomable" checked> zoomable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="zoomOnTouch" checked> zoomOnTouch </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="zoomOnWheel" checked> zoomOnWheel </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="cropBoxMovable" checked> cropBoxMovable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="cropBoxResizable" checked> cropBoxResizable </label>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" name="toggleDragModeOnDblclick" checked> toggleDragModeOnDblclick </label>
-                                                    </li>
-                                                </ul>
+                                             
                                             </div>
                                         </div>
                                     </div><!-- Row end  --> 
