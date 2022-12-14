@@ -44,6 +44,16 @@
                             </ul>
                     </li>
                     <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#blogs" href="#">
+                            <i class="icofont-truck-loaded fs-5"></i> <span>Blogs</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <!-- Menu: Sub menu ul -->
+                            <ul class="sub-menu collapse" id="blogs">
+                                <li><a class="ms-link" href="blogs-add.php">Blogs Add</a></li>
+                                <li><a class="ms-link" href="blogs-details.php">Blogs Edit/Delete</a></li>
+                                
+                            </ul>
+                    </li>
+                    <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#cards" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Cards</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
