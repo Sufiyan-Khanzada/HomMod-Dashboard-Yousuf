@@ -5,9 +5,7 @@
   <?php
   include 'header.php';
   ?>
-   <?php
-  include 'connection.php';
-  ?>
+    <?php include 'connection.php'; ?>
   </head>
               
 
@@ -17,17 +15,18 @@
                     <div class="row align-items-center">
                         <div class="border-0 mb-4">
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                                <h3 class="fw-bold mb-0">Categorie List</h3>
+                                <h3 class="fw-bold mb-0">Brands List</h3>
                                 <!-- <a href="categories-add.php" class="btn btn-primary py-2 px-5 btn-set-task w-sm-100"><i class="icofont-plus-circle me-2 fs-6"></i> Add Categories</a> -->
                             </div>
                         </div>
                     </div> <!-- Row end  -->
-                    <div class="row g-3 mb-3">
+                    <div class="row g-4 mb-4">
+                   
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
                                 <?php
-                   $sql = "SELECT * FROM  categories";
+                   $sql = "SELECT * FROM  brands";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
                       ?>
@@ -35,11 +34,9 @@
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th>Main Categories</th>
-                                                <th>Sub Category</th>
-                                                <th>Sub Category1</th>
-                                                <th>Main Cat pic</th>
-                                                <!-- <th>Main Category 1</th> -->
+                                                <th>Brand name</th>
+                                                <th>Brand status</th>
+                                                <th>Brand image</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -49,22 +46,34 @@
                         ?>
                                             <tr>
                                                 <td><strong><?php echo $row['id'];?></strong></td>
-                                                <td><?php echo $row['main_category'];?></td>
-                                                <td><?php echo $row['sub_category'];?></td>
-                                                <td><?php echo $row['sub_category'];?></td>
+                                                <td><?php echo $row['brand_name'];?></td>
+                                                <td><?php echo $row['brand_status'];?></td>
                                                 <td> 
-           <a href="<?php echo $row['main_cat_pic']; ?>">
-               <img src="<?php echo $row['main_cat_pic'];?>"  width=50 height=50>
+           <a href="<?php echo $row['brand_image']; ?>">
+               <img src="<?php echo $row['brand_image'];?>"  width=50 height=50>
                </a>
 
             </td>  
-                                                <!-- <td><?php echo $row['main_category1'];?></td> -->
+
+            <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <a href='Edit-brands.php ?id=<?php echo $row['id']; ?>' class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>
+                                        <a href='Delete-brands.php ?id=<?php echo $row['id']; ?>'class="btn btn-outline-secondary deleterow"><i class="icofont-ui-delete text-danger"></i></a>
+                                    </div>
+                                                </td>
+                         
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                        <a href='Edit-categories.php ?id=<?php echo $row['id']; ?>' class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>
-                                                        <a href='Delete-categories.php ?id=<?php echo $row['id']; ?>'class="btn btn-outline-secondary deleterow"><i class="icofont-ui-delete text-danger"></i></a>
+                                                                 
+                                     <!-- <a href=Edit-customer.php?id=<?php echo $row['id']; ?> class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a> -->
+                                                        <!-- <button type="button" class="btn btn-outline-secondary deleterow"><i class="icofont-ui-delete text-danger"></i></button> -->
                                                     </div>
                                                 </td>
+                                            </tr>
+                                          
+                                           
+                                                                                           
+    
                                             </tr>
                                             <?php 
                     }}
@@ -72,13 +81,16 @@
                       ?>
                                         </tbody>
                                     </table>
+                   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
+                                
+           
+                           
             <?php
   include 'footer.php';
   ?>

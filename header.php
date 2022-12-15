@@ -79,6 +79,17 @@
                             </ul>
                     </li>
                     <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#brands" href="#">
+                            <i class="icofont-chart-flow fs-5"></i> <span>Brands</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <!-- Menu: Sub menu ul -->
+                            <ul class="sub-menu collapse" id="brands">
+                                 <li><a class="ms-link" href="brands-add.php">Brands Add</a></li>
+                                <li><a class="ms-link" href="brand-details.php">Brands Edit/Delete</a></li>
+                              
+                               
+                            </ul>
+                    </li>
+                    <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-order" href="#">
                         <i class="icofont-notepad fs-5"></i> <span>Orders</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->

@@ -32,5 +32,5 @@
     }
     
 
-header("Location: http://localhost/HomMod-Dashboard-Yousuf/product-add.php");
+header("Location: http://localhost/HomMod-Dashboard-Yousuf/pendingproduct.php");
 ?>

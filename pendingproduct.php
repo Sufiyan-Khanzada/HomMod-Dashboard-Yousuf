@@ -53,10 +53,16 @@
                                                 <td><?php echo $row['sale_price'];?></td>
                                                 <td><?php echo $row['color'];?></td>
                                                 <td><?php echo $row['stock_available'];?></td>
-                                                <td><a href='Edit-items.php?id=<?php echo $row['id']; ?>' class="text-truncate h-100 d-flex align-items-center"
-                                     class="text-alternate">Edit</a></td> 
-                                     <td><a href='Delete-Items.php?id=<?php echo $row['id']; ?>' class="text-truncate h-100 d-flex align-items-center"
-                                     class="text-alternate">Delete</a></td> 
+
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <a href='Edit-items.php ?id=<?php echo $row['id']; ?>' class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>
+                                                        <a href='Delete-Items.php ?id=<?php echo $row['id']; ?>'class="btn btn-outline-secondary deleterow"><i class="icofont-ui-delete text-danger"></i></a>
+                                                    </div>
+                                                </td>
+
+                                              
+
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                                                  
