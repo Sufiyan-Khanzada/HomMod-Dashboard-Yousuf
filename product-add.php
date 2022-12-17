@@ -163,47 +163,47 @@
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image1" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file" id="file" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image2" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file1" id="file1" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file"  name="image3" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file"  name="file2" id="file2" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image4"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file3"  id="file3" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image5"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file4"  id="file4" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image6"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file5"  id="file6" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image7"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file6"  id="file6" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image8"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file7"  id="file7" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="image9"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file8"  id="file8" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>
                                        <div>
                                        <button type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
