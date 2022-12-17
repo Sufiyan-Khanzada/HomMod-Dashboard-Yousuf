@@ -12,19 +12,31 @@ $msg="";
 $upd_id=$_GET['id'];
 if(isset($_POST['updatevid']))
 {
-  $title = $_POST['title'];
-  $content = $_POST['content'];
-  $short_content = $_POST['short_content'];
-  $featured_image = $_POST['featured_image'];
-  $author = $_POST['author'];
-  $post_status = $_POST['post_status'];
- 
+    $img=$_FILES['file']['tmp_name'];
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $short_content = $_POST['short_content'];
+    $author = $_POST['author'];
+    $post_status = $_POST['post_status'];
 
-$query="UPDATE blogs SET title='$title',content='$content', short_content='$short_content',featured_image='$featured_image',
-author='$author',post_status='$post_status' WHERE id='$upd_id'";
+    //   $featured_image = $_POST['featured_image'];
+  
+
+  if($img!="")
+  {
+    $name=$_FILES['file']['name'];
+    $target_dir='blogs_images/';
+    $target_file = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file"]["name"]);
+    move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
+  
+      // Upload file
+
+       $query="UPDATE blogs SET title='$title',content='$content', short_content='$short_content',author='$author',post_status='$post_status',featured_image='$target_file' WHERE id='$upd_id'";
+  
+  }
 $result_query=mysqli_query($conn,$query);
 
-if($result_query){
+  if($result_query){
 
     $msg="<div class='alert alert-success'>
   <strong>Success!</strong> Blogs Updated Done Succesfully.
@@ -39,7 +51,7 @@ $msg="<div class='alert alert-danger'>
 
 
 
-
+  
 }
 
 ?>
@@ -128,7 +140,7 @@ $msg="<div class='alert alert-danger'>
                      <div class="col-md-12">
                                                 <label class="form-label"> Featured Image</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="featured_image"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="featured_image"  id="file" value="<?php  echo $row['featured_image']?>"class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>                   
                                          
 <br>
