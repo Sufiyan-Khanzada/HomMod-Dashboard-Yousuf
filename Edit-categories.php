@@ -17,12 +17,12 @@ $main_category = $_POST['main_category'];
 $sub_category = $_POST['sub_category'];
 $sub_category1 = $_POST['sub_category1'];
 // $main_category1 = $_POST['main_category1'];
-$main_cat_pic = $_POST['main_cat_pic'];
+// $main_cat_pic = $_POST['main_cat_pic'];
   
 if($img!="")
 {
 $name=$_FILES['file']['name'];
-$target_dir='video-thumbnails/';
+$target_dir='categories_image/';
 $target_file = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file"]["name"]);
 
 move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);

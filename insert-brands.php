@@ -6,7 +6,7 @@
  $brand_status = $_POST['brand_status'];
 //  $brand_image = $_POST['brand_image'];
 $name=$_FILES['file']['name'];
-$target_dir='product_images/';
+$target_dir='brands_images/';
 $target_file = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file"]["name"]);
 move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
  

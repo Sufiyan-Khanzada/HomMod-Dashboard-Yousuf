@@ -12,12 +12,32 @@ $msg="";
 $upd_id=$_GET['id'];
 if(isset($_POST['updatevid']))
 {
+    $img=$_FILES['file']['tmp_name'];
     $brand_name = $_POST['brand_name'];
     $brand_status = $_POST['brand_status'];
-    $brand_image = $_POST['brand_image'];
+    // $brand_image = $_POST['brand_image'];
  
+    if($img!="")
+    {
+    $name=$_FILES['file']['name'];
+    $target_dir='brands_images/';
+    $target_file = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file"]["name"]);
+    
+    move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
+    
+        // Upload file
 
-$query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status',brand_image='$brand_image' WHERE id='$upd_id'";
+        $query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status',brand_image='$target_file' WHERE id='$upd_id'";
+    
+    }
+    else{
+ 
+    
+    
+    }
+
+
+
 $result_query=mysqli_query($conn,$query);
 
 if($result_query){
@@ -113,7 +133,7 @@ $msg="<div class='alert alert-danger'>
                      <div class="col-md-12">
                                                 <label class="form-label"> Brand Image</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="brand_image"  id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="brand_image"  id="file" value="<?php  echo $row['brand_image']?>" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>                   
                                          
 <br>
