@@ -47,7 +47,7 @@
                                             <div class="col-md-12">
                                                 <label class="form-label">Brand Image</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
-                                                <input type="file" name="brand_image" id="input-file-to-destroy" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
+                                                <input type="file" name="file" id="file" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>                        
                                             </div>
                                         </div>
