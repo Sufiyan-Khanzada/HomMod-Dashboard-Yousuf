@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div> <!-- Row end  -->
-                    <div class="row g-3 mb-3">
+                    <div class="row g-12 mb-3">
                    
                         <div class="col-md-12">
                             <div class="card">
@@ -30,7 +30,7 @@
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
                       ?>
-                                    <table id="myDataTable" class="table table-hover align-middle mb-0" style="width: 100%;">
+                                    <table id="myDataTable" class="table table-hover align-middle mb-0" style="width: 10%;">
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
@@ -38,6 +38,17 @@
                                                 <th>Normal Price</th>
                                                 <th>Sale Price</th>
                                                 <th>Color</th>
+                                                <th>Color1</th>
+                                                <th>Color2</th>
+                                                <!-- <th>Color3</th> -->
+                                                <!-- <th>Color4</th>
+                                                <th>Color5</th> -->
+                                                <th>Size</th>
+                                                <th>Size1</th>
+                                                <th>Size2</th>
+                                                <!-- <th>Size3</th> -->
+                                                <!-- <th>Size4</th>
+                                                <th>Size5</th> -->
                                                 <th>Stock Available</th>
                                                 <th>Action</th>
                                             </tr>
@@ -52,6 +63,17 @@
                                                 <td><?php echo $row['normal_price'];?></td>
                                                 <td><?php echo $row['sale_price'];?></td>
                                                 <td><?php echo $row['color'];?></td>
+                                                <td><?php echo $row['color1'];?></td>
+                                                <td><?php echo $row['color2'];?></td>
+                                                <!-- <td><?php echo $row['color3'];?></td> -->
+                                                <!-- <td><?php echo $row['color4'];?></td>
+                                                <td><?php echo $row['color5'];?></td> -->
+                                                <td><?php echo $row['size'];?></td>
+                                                <td><?php echo $row['size1'];?></td>
+                                                <td><?php echo $row['size2'];?></td>
+                                                <!-- <td><?php echo $row['size3'];?></td> -->
+                                                <!-- <td><?php echo $row['size4'];?></td>
+                                                <td><?php echo $row['size5'];?></td> -->
                                                 <td><?php echo $row['stock_available'];?></td>
 
                                                 <td>

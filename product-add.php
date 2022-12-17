@@ -26,168 +26,80 @@
                             <div class="sticky-lg-top">
                                 <div class="card mb-3">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Pricing Info</h6>
+                                        <h6 class="m-0 fw-bold">Sizes</h6>
                                     </div>
                                     <div class="card-body">
+                                    <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">
                                         <div class="row g-3 align-items-center">
-                                            <div class="col-md-12">
-                                                <label  class="form-label">Product Price Sale</label>
-                                                <input type="text" class="form-control">
+                                            <div class="col-md-6">
+                                                <label  class="form-label">X-Small</label>
+                                                <input  type="text" name="size1"  class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Small</label>
+                                                <input type="text" name="size2"  class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Medium</label>
+                                                <input  type="text" name="size3"  class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Large</label>
+                                                <input type="text" name="size4"  class="form-control">
                                             </div>
                                             <div class="col-md-12">
-                                                <label  class="form-label">Product Price Without Sale</label>
-                                                <input type="text" class="form-control">
+                                                <label  class="form-label">X-Large</label>
+                                                <input type="text" name="size5"  class="form-control">
                                             </div>
                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Visibility Status</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="couponsstatus" checked>
-                                            <label class="form-check-label">
-                                                Published
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="couponsstatus">
-                                            <label class="form-check-label">
-                                                Hidden
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Size</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="sizechek1">
-                                            <label class="form-check-label" for="sizechek1">
-                                            XS
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="sizechek2">
-                                            <label class="form-check-label" for="sizechek2">
-                                            S
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="sizechek3">
-                                            <label class="form-check-label" for="sizechek3">
-                                            M
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="sizechek4">
-                                            <label class="form-check-label" for="sizechek4">
-                                            L
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="sizechek5">
-                                            <label class="form-check-label" for="sizechek5">
-                                            XL
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                              <!--   <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Publish Schedule</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row g-3 align-items-center">
-                                            <div class="col-md-12">
-                                                <label  class="form-label">Publish Date</label>
-                                                <input type="date" class="form-control w-100">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label  class="form-label">Publish Time</label>
-                                                <input type="time" class="form-control w-100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Tags</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-group demo-tagsinput-area">
-                                            <div class="form-line">
-                                                <input type="text" class="form-control" data-role="tagsinput">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Categories</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <label  class="form-label">Categories Select</label>
-                                        <select class="form-select" size="3" aria-label="size 3 select example">
-                                            <option value="1">Watch</option>
-                                            <option value="2">Clothes</option>
-                                            <option value="3">Toy</option>
-                                            <option value="4">Cosmetic</option>
-                                            <option value="5">Laptop</option>
-                                            <option value="6">Mobile</option>
-                                            <option value="7">Gaming accessories</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Sub Categories</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <label  class="form-label">Categories Select</label>
-                                        <select class="form-select" size="3" aria-label="size 3 select example">
-                                            <option value="1">Watch</option>
-                                            <option value="2">Clothes</option>
-                                            <option value="3">Toy</option>
-                                            <option value="4">Cosmetic</option>
-                                            <option value="5">Laptop</option>
-                                            <option value="6">Mobile</option>
-                                            <option value="7">Gaming accessories</option>
-                                        </select>
-                                    </div>
-                                </div>
+                              
+
+                                
+                              
+                               
+                              
                                 <div class="card">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                        <h6 class="m-0 fw-bold">Inventory Info</h6>
+                                        <h6 class="m-0 fw-bold">Colors</h6>
                                     </div>
                                     <div class="card-body">
                                         <div class="row g-3 align-items-center">
-                                            <div class="col-md-12">
-                                                <label  class="form-label">SKU</label>
-                                                <input type="text" class="form-control">
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color1</label>
+                                                <input  type="text" name="color1" class="form-control">
                                             </div>
-                                            <div class="col-md-12">
-                                                <label  class="form-label">Total Stock Quantity</label>
-                                                <input type="text" class="form-control">
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color2</label>
+                                                <input type="text" name="color2" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color3</label>
+                                                <input type="text" name="color3" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color4</label>
+                                                <input type="text" name="color4" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color5</label>
+                                                <input  type="text" name="color5" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-xl-8 col-lg-8">
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
                                 </div>
                                 <div class="card-body">
-                                <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">  
+                                <!-- <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">   -->
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Name</label>
@@ -197,9 +109,14 @@
                                                 <label  class="form-label">Color</label>
                                                 <input type="text" name="color" class="form-control">
                                             </div>
-                                            <div class="col-md-12">
+                                            
+                                            <div class="col-md-6">
                                                 <label  class="form-label">Short Description</label>
                                                 <textarea type="text" name="short_description" class="form-control"></textarea>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Size</label>
+                                                <input type="text" name="size" class="form-control">
                                             </div>
                                             <div class="col-md-12">
                                                 <label  class="form-label">Long Description</label>

@@ -16,11 +16,19 @@ $title=$_POST['title'];
 $normal_price=$_POST['normal_price'];
 $sale_price=$_POST['sale_price'];
 $color=$_POST['color'];
+$color1 = $_POST['color1'];
+$color2 = $_POST['color2'];
+$color3 = $_POST['color3'];
+$color4 = $_POST['color4'];
+$color5 = $_POST['color5'];
+$size=$_POST['size'];
+$size1 = $_POST['size1'];
+$size2 = $_POST['size2'];
+$size3 = $_POST['size3'];
+$size4 = $_POST['size4'];
+$size5 = $_POST['size5'];
 $stock_available=$_POST['stock_available'];
-
-
-
-$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',color='$color',stock_available='$stock_available' WHERE id='$upd_id'";
+$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
 $result_query=mysqli_query($conn,$query);
 
 if($result_query){
@@ -75,7 +83,7 @@ $msg="<div class='alert alert-danger'>
                     while($row = mysqli_fetch_assoc($result)){
 
                     ?>
-                        <div class="col-lg-8">
+                        <div class="col-lg-12">
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
@@ -109,14 +117,81 @@ $msg="<div class='alert alert-danger'>
 
                                             </div>
                                             <div class="col-md-6">
+                                            <label class="form-label">Size</label>
+                                                <input type="text" name="size" class="form-control" value="<?php  echo $row['size']?>">
+
+                                            </div>
+                                            <div class="col-md-6">
                                             <label class="form-label">Stock Available</label>
                                                 <input type="text" name="stock_available" class="form-control" value="<?php  echo $row['stock_available']?>">
 
                                             </div>
 
 
-                                         
-                                                
+                                            <div class="card">
+                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
+                                        <h6 class="m-0 fw-bold">Colors</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color1</label>
+                                                <input  type="text" name="color1" class="form-control" value="<?php  echo $row['color1']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color2</label>
+                                                <input type="text" name="color2" class="form-control" value="<?php  echo $row['color2']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color3</label>
+                                                <input type="text" name="color3" class="form-control" value="<?php  echo $row['color3']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color4</label>
+                                                <input type="text" name="color4" class="form-control" value="<?php  echo $row['color4']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Color5</label>
+                                                <input  type="text" name="color5" class="form-control" value="<?php  echo $row['color5']?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
+                                        <h6 class="m-0 fw-bold">Sizes</h6>
+                                    </div>
+                                    <div class="card-body">
+                                    <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-md-6">
+                                                <label  class="form-label">X-Small</label>
+                                                <input  type="text" name="size1"  class="form-control" value="<?php  echo $row['size1']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Small</label>
+                                                <input type="text" name="size2"  class="form-control" value="<?php  echo $row['size2']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Medium</label>
+                                                <input  type="text" name="size3"  class="form-control" value="<?php  echo $row['size3']?>">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Large</label>
+                                                <input type="text" name="size4"  class="form-control"value="<?php  echo $row['size4']?>">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label  class="form-label">X-Large</label>
+                                                <input type="text" name="size5"  class="form-control" value="<?php  echo $row['size5']?>">
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                           
+                                </div>  
 
                                             </div>
                                             <div class="row align-items-center">
