@@ -67,7 +67,7 @@ $banner_sale_price4 = $_POST['banner_sale_price4'];
       //  $banner_image = $_POST['banner_image4'];
       $target_file5= "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file5"]["name"]);
       move_uploaded_file($_FILES['file5']['tmp_name'],$target_dir.$name);
-    
+    }
         // Upload file
 
 $query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status',brand_image='$target_file',banner_text='$banner_text',banner_normal_price='$banner_normal_price' ,banner_sale_price='$banner_sale_price',banner_image='$target_file1',banner_text1='$banner_text1',banner_normal_price1='$banner_normal_price1' ,banner_sale_price1='$banner_sale_price1',banner_image1='$target_file2',
@@ -75,16 +75,11 @@ $query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status'
         banner_text3='$banner_text3',banner_normal_price3='$banner_normal_price3' ,banner_sale_price3='$banner_sale_price3',banner_image3='$target_file4',
         banner_text4='$banner_text4',banner_normal_price4='$banner_normal_price4' ,banner_sale_price4='$banner_sale_price4',banner_image4='$target_file5' WHERE id='$upd_id'";
     
-    }
-    else{
- 
     
-    
-    }
+   
+    $result_query=mysqli_query($conn,$query);
 
-$result_query=mysqli_query($conn,$query);
-
-if($result_query){
+    if($result_query){
 
     $msg="<div class='alert alert-success'>
   <strong>Success!</strong> Brands Updated Done Succesfully.
