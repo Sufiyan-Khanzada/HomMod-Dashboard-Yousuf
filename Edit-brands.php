@@ -73,8 +73,7 @@ $banner_sale_price4 = $_POST['banner_sale_price4'];
 $query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status',brand_image='$target_file',banner_text='$banner_text',banner_normal_price='$banner_normal_price' ,banner_sale_price='$banner_sale_price',banner_image='$target_file1',banner_text1='$banner_text1',banner_normal_price1='$banner_normal_price1' ,banner_sale_price1='$banner_sale_price1',banner_image1='$target_file2',
         banner_text2='$banner_text2',banner_normal_price2='$banner_normal_price2' ,banner_sale_price2='$banner_sale_price2',banner_image2='$target_file3',
         banner_text3='$banner_text3',banner_normal_price3='$banner_normal_price3' ,banner_sale_price3='$banner_sale_price3',banner_image3='$target_file4',
-        banner_text4='$banner_text4',banner_normal_price4='$banner_normal_price4' ,banner_sale_price4='$banner_sale_price4',banner_image4='$target_file5'
-         WHERE id='$upd_id'";
+        banner_text4='$banner_text4',banner_normal_price4='$banner_normal_price4' ,banner_sale_price4='$banner_sale_price4',banner_image4='$target_file5' WHERE id='$upd_id'";
     
     }
     else{
@@ -82,8 +81,6 @@ $query="UPDATE brands SET brand_name='$brand_name', brand_status='$brand_status'
     
     
     }
-
-
 
 $result_query=mysqli_query($conn,$query);
 
@@ -146,7 +143,7 @@ $msg="<div class='alert alert-danger'>
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
                                 </div>
                                 <div class="card-body">
-                                <!-- <form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
+                            
                                  <form method="post" action="" enctype="multipart/form-data">
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
@@ -179,12 +176,6 @@ $msg="<div class='alert alert-danger'>
                     <div class="row align-items-center">
                         <div class="border-0 mb-4">
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                            <!-- <button  type="submit" value="Save" name="updatevid" class="btn  btn-icon btn-icon-end btn-primary">
-                             <span>Update</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cs-icon cs-icon-send"><path d="M12.6593 16.3217L17.5347 3.86248C17.7992 3.18632 17.9315 2.84824 17.8212 2.6442C17.7749 2.55869 17.7048 2.48852 17.6193 2.44227C17.4152 2.33191 17.0771 2.46421 16.401 2.72879L3.94178 7.60412L3.94177 7.60412C3.24083 7.87841 2.89035 8.01555 2.81681 8.23919C2.78604 8.33276 2.78359 8.43333 2.80977 8.52828C2.87235 8.75524 3.21574 8.90927 3.90252 9.21732L8.53015 11.293L8.53015 11.293C8.65873 11.3507 8.72302 11.3796 8.77576 11.4235C8.79906 11.4429 8.82056 11.4644 8.83997 11.4877C8.88389 11.5404 8.91273 11.6047 8.9704 11.7333L11.0461 16.3609C11.3542 17.0477 11.5082 17.3911 11.7352 17.4537C11.8301 17.4799 11.9307 17.4774 12.0243 17.4466C12.2479 17.3731 12.385 17.0226 12.6593 16.3217Z"></path><path d="M11.8995 8.36395L9.07107 11.1924"></path></svg>
-                        </button> -->
-                        </form>
-                              
                             </div>
                         </div>
                     </div> 
@@ -195,8 +186,7 @@ $msg="<div class='alert alert-danger'>
                                     <h6 class="mb-0 fw-bold ">Banner 1</h6>
                                 </div>
                                 <div class="card-body">
-                                <!--<form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
-                                 <!-- <form method="post" action="" enctype="multipart/form-data"> -->
+                            
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -228,12 +218,7 @@ $msg="<div class='alert alert-danger'>
                     <div class="row align-items-center">
                         <div class="border-0 mb-4">
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                            <!-- <button  type="submit" value="Save" name="updatevid" class="btn  btn-icon btn-icon-end btn-primary">
-                             <span>Update</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cs-icon cs-icon-send"><path d="M12.6593 16.3217L17.5347 3.86248C17.7992 3.18632 17.9315 2.84824 17.8212 2.6442C17.7749 2.55869 17.7048 2.48852 17.6193 2.44227C17.4152 2.33191 17.0771 2.46421 16.401 2.72879L3.94178 7.60412L3.94177 7.60412C3.24083 7.87841 2.89035 8.01555 2.81681 8.23919C2.78604 8.33276 2.78359 8.43333 2.80977 8.52828C2.87235 8.75524 3.21574 8.90927 3.90252 9.21732L8.53015 11.293L8.53015 11.293C8.65873 11.3507 8.72302 11.3796 8.77576 11.4235C8.79906 11.4429 8.82056 11.4644 8.83997 11.4877C8.88389 11.5404 8.91273 11.6047 8.9704 11.7333L11.0461 16.3609C11.3542 17.0477 11.5082 17.3911 11.7352 17.4537C11.8301 17.4799 11.9307 17.4774 12.0243 17.4466C12.2479 17.3731 12.385 17.0226 12.6593 16.3217Z"></path><path d="M11.8995 8.36395L9.07107 11.1924"></path></svg>
-                        </button> -->
-                        </form>
-                              
+                    
                             </div>
                         </div>
                     </div> 
@@ -244,8 +229,7 @@ $msg="<div class='alert alert-danger'>
                                     <h6 class="mb-0 fw-bold ">Banner 2</h6>
                                 </div>
                                 <div class="card-body">
-                                <!--<form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
-                                 <!-- <form method="post" action="" enctype="multipart/form-data"> -->
+                               
                                         <div class="row g-3 align-items-center">
                                         <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -277,12 +261,6 @@ $msg="<div class='alert alert-danger'>
                     <div class="row align-items-center">
                         <div class="border-0 mb-4">
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                            <!-- <button  type="submit" value="Save" name="updatevid" class="btn  btn-icon btn-icon-end btn-primary">
-                             <span>Update</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cs-icon cs-icon-send"><path d="M12.6593 16.3217L17.5347 3.86248C17.7992 3.18632 17.9315 2.84824 17.8212 2.6442C17.7749 2.55869 17.7048 2.48852 17.6193 2.44227C17.4152 2.33191 17.0771 2.46421 16.401 2.72879L3.94178 7.60412L3.94177 7.60412C3.24083 7.87841 2.89035 8.01555 2.81681 8.23919C2.78604 8.33276 2.78359 8.43333 2.80977 8.52828C2.87235 8.75524 3.21574 8.90927 3.90252 9.21732L8.53015 11.293L8.53015 11.293C8.65873 11.3507 8.72302 11.3796 8.77576 11.4235C8.79906 11.4429 8.82056 11.4644 8.83997 11.4877C8.88389 11.5404 8.91273 11.6047 8.9704 11.7333L11.0461 16.3609C11.3542 17.0477 11.5082 17.3911 11.7352 17.4537C11.8301 17.4799 11.9307 17.4774 12.0243 17.4466C12.2479 17.3731 12.385 17.0226 12.6593 16.3217Z"></path><path d="M11.8995 8.36395L9.07107 11.1924"></path></svg>
-                        </button> -->
-                        </form>
-                              
                             </div>
                         </div>
                     </div> 
@@ -292,8 +270,6 @@ $msg="<div class='alert alert-danger'>
                                     <h6 class="mb-0 fw-bold "> Banner 3</h6>
                                 </div>
                                 <div class="card-body">
-                                <!--<form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
-                                 <form method="post" action="" enctype="multipart/form-data">
                                         <div class="row g-3 align-items-center">
                                         <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -336,8 +312,7 @@ $msg="<div class='alert alert-danger'>
                                     <h6 class="mb-0 fw-bold "> Banner 4</h6>
                                 </div>
                                 <div class="card-body">
-                                <!--<form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
-                                 <form method="post" action="" enctype="multipart/form-data">
+                              
                                         <div class="row g-3 align-items-center">
                                         <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -361,25 +336,26 @@ $msg="<div class='alert alert-danger'>
                                                 <input type="file" name="file4"  id="file4" value="<?php  echo $row['banner_image3']?>" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
                                             </div>                   
                                         
-                                        <div class="mb-3">
+                                            <div class="mb-3">
                                         </div>
                                      </div>
-   
+                                     
+
                     <div class="row align-items-center">
                         <div class="border-0 mb-4">
+                            <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
                            
+                              
+                            </div>
                         </div>
                     </div> 
-                
-    
 
                       <!-- Banner# 5 -->
                        <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold "> Banner 5</h6>
                                 </div>
                                 <div class="card-body">
-                                <!--<form class="post-form" action="insertbrands.php" method="post" enctype="multipart/form-data">    -->
-                                 <form method="post" action="" enctype="multipart/form-data">
+                            
                                         <div class="row g-3 align-items-center">
                                         <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -415,11 +391,11 @@ $msg="<div class='alert alert-danger'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cs-icon cs-icon-send"><path d="M12.6593 16.3217L17.5347 3.86248C17.7992 3.18632 17.9315 2.84824 17.8212 2.6442C17.7749 2.55869 17.7048 2.48852 17.6193 2.44227C17.4152 2.33191 17.0771 2.46421 16.401 2.72879L3.94178 7.60412L3.94177 7.60412C3.24083 7.87841 2.89035 8.01555 2.81681 8.23919C2.78604 8.33276 2.78359 8.43333 2.80977 8.52828C2.87235 8.75524 3.21574 8.90927 3.90252 9.21732L8.53015 11.293L8.53015 11.293C8.65873 11.3507 8.72302 11.3796 8.77576 11.4235C8.79906 11.4429 8.82056 11.4644 8.83997 11.4877C8.88389 11.5404 8.91273 11.6047 8.9704 11.7333L11.0461 16.3609C11.3542 17.0477 11.5082 17.3911 11.7352 17.4537C11.8301 17.4799 11.9307 17.4774 12.0243 17.4466C12.2479 17.3731 12.385 17.0226 12.6593 16.3217Z"></path><path d="M11.8995 8.36395L9.07107 11.1924"></path></svg>
                         </button>
                         </form>
-                              
+                        </div>
                             </div>
                         </div>
                     </div> 
-
+              
                                 </div><!-- Row end  --> 
 
                                 </div>
