@@ -62,27 +62,29 @@
                    $sql = "SELECT COUNT(id) AS users FROM users";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
+
                       ?>
                       
-                                                                   
+                                                              
         <?php
                       while($row = mysqli_fetch_assoc($result)){
-                        ?>
+                        $sql1 = "SELECT COUNT(id) AS item FROM items";
+                        $result1 = mysqli_query($conn, $sql1);
+                        if(mysqli_num_rows($result) > 0){
+                      while($row1 = mysqli_fetch_assoc($result1)){
+                        $sql2 = "SELECT COUNT(id) AS categ FROM categories";
+                        $result2 = mysqli_query($conn, $sql2);
+                        if(mysqli_num_rows($result) > 0){
+                      while($row2 = mysqli_fetch_assoc($result2)){
+                        $sql3 = "SELECT COUNT(id) AS brand FROM brands";
+                        $result3= mysqli_query($conn, $sql3);
+                        if(mysqli_num_rows($result) > 0){
+                      while($row3 = mysqli_fetch_assoc($result3)){
+                      ?>
+                
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12">
-                            <!-- <div class="tab-filter d-flex align-items-center justify-content-between mb-3 flex-wrap">
-                                <ul class="nav nav-tabs tab-card tab-body-header rounded  d-inline-flex w-sm-100">
-                                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#summery-today" >Today</a></li>
-                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#summery-week" >Week</a></li>
-                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#summery-month" >Month</a></li>
-                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#summery-year" >Year</a></li>
-                                </ul>
-                                <div class="date-filter d-flex align-items-center mt-2 mt-sm-0 w-sm-100">
-                                    <div class="input-group">
-                                        <input type="date" class="form-control">
-                                        <button class="btn btn-primary" type="button"><i class="icofont-filter fs-5"></i></button>
-                                    </div>
-                                </div> -->
+                            
                             </div>
                             <div class="tab-content mt-1">
                                 <div class="tab-pane fade show active" id="summery-today">
@@ -104,8 +106,8 @@
                                             <div class="card">
                                                 <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
                                                     <div class="left-info">
-                                                        <span class="text-muted">Order</span>
-                                                        <div><span class="fs-6 fw-bold me-2">2314</span></div>
+                                                        <span class="text-muted">Products</span>
+                                                        <div><span class="fs-6 fw-bold me-2"><?php echo $row1['item'];?></span></div>
                                                     </div>
                                                     <div class="right-icon">
                                                         <i class="icofont-shopping-cart fs-3 color-lavender-purple"></i>
@@ -117,8 +119,8 @@
                                             <div class="card">
                                                 <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
                                                     <div class="left-info">
-                                                        <span class="text-muted">Avg Sale</span>
-                                                        <div><span class="fs-6 fw-bold me-2">$1770</span></div>
+                                                        <span class="text-muted">Categories</span>
+                                                        <div><span class="fs-6 fw-bold me-2"><?php echo $row2['categ'];?></span></div>
                                                     </div>
                                                     <div class="right-icon">
                                                         <i class="icofont-sale-discount fs-3 color-santa-fe"></i>
@@ -130,8 +132,8 @@
                                             <div class="card">
                                                 <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
                                                     <div class="left-info">
-                                                        <span class="text-muted">Avg Item Sale</span>
-                                                        <div><span class="fs-6 fw-bold me-2">185</span></div>
+                                                        <span class="text-muted">Total Brands</span>
+                                                        <div><span class="fs-6 fw-bold me-2"><?php echo $row3['brand'];?></span></div>
                                                     </div>
                                                     <div class="right-icon">
                                                         <i class="icofont-calculator-alt-2 fs-3 color-danger"></i>
@@ -587,7 +589,7 @@
                     </div><!-- Row end  -->
                     <?php 
                     }}
-                      
+                      }}}}}}
                       ?>
                     <div class="row g-3 mb-3">
                         <div class="col-xxl-8 col-xl-8">
