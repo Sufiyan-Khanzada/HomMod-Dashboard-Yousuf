@@ -49,7 +49,7 @@
                                             </div>
                                             <div class="col-md-6">
                                             <label  class="form-label">Items</label>
-                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="items"  size="3" multiple="multiple"  tabindex="1">
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="items[]"  size="3" multiple  tabindex="1">
                                             <?php
                    $sql = "SELECT * FROM  items";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
@@ -80,7 +80,7 @@
                                
 
                                        <div>
-                                       <button style="margin-left:20px" type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
+                                       <button style="margin-left:20px" type="submit" value="Save" name="save_multi_select" class="btn btn-icon btn-icon-end btn-primary">
                                         
                                          <span>Create</span>
                                         <i data-cs-icon="send"></i>

@@ -6,7 +6,10 @@
  $price = $_POST['price'];
  $items = $_POST['items'];
 
+foreach($items as $itemname){
+    echo $itemname."<br>";
 
+}
  
 
 
