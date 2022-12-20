@@ -59,12 +59,11 @@
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="bluild_box">
                                 <li><a class="ms-link" href="bluild_box.php">BuildBox Add</a></li>
-                              
+                                <li><a class="ms-link" href="bluildbox_details.php">BuildBox Edit/Delete</a></li>
                                 
                             </ul>
                     </li>
-
-                    <!-- bluild_box. -->
+                 
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#cards" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Cards</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>

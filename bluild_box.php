@@ -49,7 +49,7 @@
                                             </div>
                                             <div class="col-md-6">
                                             <label  class="form-label">Items</label>
-                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="items">
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="items"  size="3" multiple="multiple"  tabindex="1">
                                             <?php
                    $sql = "SELECT * FROM  items";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
