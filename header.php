@@ -73,6 +73,17 @@
                                 
                             </ul>
                     </li>
+
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#Memberships" href="#">
+                            <i class="icofont-truck-loaded fs-5"></i> <span>Memberships</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <!-- Menu: Sub menu ul -->
+                            <ul class="sub-menu collapse" id="Memberships">
+                              
+                                <li><a class="ms-link" href="memberships_details.php">Membership Edit/Delete</a></li>
+                                
+                            </ul>
+                    </li>
                  
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#cards" href="#">
