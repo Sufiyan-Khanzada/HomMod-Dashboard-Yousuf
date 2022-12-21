@@ -2,6 +2,22 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
+<script type="text/javascript">
+$('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 100,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+</script> 
   <?php
   include 'header.php';
   ?>
@@ -44,7 +60,7 @@
                                            
                                            
                                             <div class="col-md-6">
-                                                <label  class="form-label">Package Description</label>
+                                                <label  class="form-label" textarea>Package Description</label>
                                                 <input type="text" name="package_desc" class="form-control">
                                             </div>
                                            
@@ -52,7 +68,14 @@
                                                 <label  class="form-label">Package Price</label>
                                                 <input type="text" name="package_price" class="form-control">
                                             </div>
-                                              
+                                            <div id="summernote">
+
+                                          
+                                                <label  class="form-label">Package Price</label>
+                                                <input type="text" name="package_price" class="form-control">
+                                            
+
+                                            </div>
                                             </div>
                                                                  
                                             </div>
