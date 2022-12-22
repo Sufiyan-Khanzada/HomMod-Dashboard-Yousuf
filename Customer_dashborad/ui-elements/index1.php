@@ -18,15 +18,15 @@
         <!-- sidebar -->
         <div class="sidebar px-4 py-4 py-md-4 me-0">
             <div class="d-flex flex-column h-100">
-                <a href="index.php" class="mb-0 brand-icon">
+                <a href="index1.php" class="mb-0 brand-icon">
                     <span class="logo-icon">
                         <i class="bi bi-bag-check-fill fs-4"></i>
                     </span>
-                    <span class="logo-text">eBazar</span>
+                    <span class="logo-text">Customer dashboard</span>
                 </a>
                 <!-- Menu: main ul -->
                 <ul class="menu-list flex-grow-1 mt-3">
-                    <li><a class="m-link" href="index.php"><i class="icofont-ui-home"></i><span>Home</span></a>
+                    <li><a class="m-link" href="index1.php"><i class="icofont-ui-home"></i><span>Home</span></a>
                     </li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Authentication" href="#"><i
@@ -40,7 +40,7 @@
                             <li><a class="ms-link" href="auth-404.php"><span>404</span></a></li>
                         </ul>
                     </li>
-                    <li><a class="m-link active" href="index.php"><i class="icofont-code"></i> <span>Stater page</span></a></li>
+                    <li><a class="m-link active" href="index1.php"><i class="icofont-code"></i> <span>Stater page</span></a></li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Components" href="#"><i
                                 class="icofont-paint"></i> <span>UI Components</span> <span class="arrow icofont-dotted-down ms-auto text-end fs-5"></span></a>
@@ -94,7 +94,7 @@
                                     <i class="icofont-info-square fs-5"></i>
                                 </a>
                             </div>
-                            <div class="dropdown zindex-popover">
+                            <div class="dropdown zindex1-popover">
                                 <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
                                     <img src="../assets/images/flag/GB.png" alt="">
                                 </a>
@@ -198,7 +198,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex1-popover">
                                 <div class="u-info me-2">
                                     <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">John Quinn</span></p>
                                     <small>Admin Profile</small>
@@ -268,7 +268,7 @@
                 </div>
 
                 <!-- Modal Custom Settings-->
-                <div class="modal fade right" id="Settingmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal fade right" id="Settingmodal" tabindex1="-1"  aria-hidden="true">
                     <div class="modal-dialog  modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -419,5 +419,5 @@
     <script src="../../js/template.js"></script>
 </body>
 
-<!-- Mirrored from pixelwibes.com/template/ebazar/php/dist/ui-elements/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:18:50 GMT -->
+<!-- Mirrored from pixelwibes.com/template/ebazar/php/dist/ui-elements/index1.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:18:50 GMT -->
 </php>

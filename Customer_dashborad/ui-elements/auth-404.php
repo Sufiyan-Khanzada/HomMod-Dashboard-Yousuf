@@ -48,7 +48,7 @@
                                         <span class="">Sorry, the page you're looking for doesn;t exist. if you think something is brlken, report a problem.</span>
                                     </div>
                                     <div class="col-12 text-center">
-                                        <a href="index.html" title="" class="btn btn-lg btn-block btn-light lift text-uppercase">Back to Home</a>
+                                        <a href="index.php" title="" class="btn btn-lg btn-block btn-light lift text-uppercase">Back to Home</a>
                                     </div>
                                 </form>
                                 <!-- End Form -->

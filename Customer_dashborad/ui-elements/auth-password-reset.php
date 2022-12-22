@@ -54,10 +54,10 @@
                                         </div>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <a href="auth-two-step.html" title="" class="btn btn-lg btn-block btn-light lift text-uppercase">SUBMIT</a>
+                                        <a href="auth-two-step.php" title="" class="btn btn-lg btn-block btn-light lift text-uppercase">SUBMIT</a>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <span class="text-muted"><a href="auth-signin.html" class="text-secondary">Back to Sign in</a></span>
+                                        <span class="text-muted"><a href="auth-signin.php" class="text-secondary">Back to Sign in</a></span>
                                     </div>
                                 </form>
                                 <!-- End Form -->

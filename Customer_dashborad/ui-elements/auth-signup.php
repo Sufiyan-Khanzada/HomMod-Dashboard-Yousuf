@@ -85,10 +85,10 @@
                                         </div>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <a href="auth-signin.html" class="btn btn-lg btn-block btn-light lift text-uppercase" alt="SIGNUP">SIGN UP</a>
+                                        <a href="auth-signin.php" class="btn btn-lg btn-block btn-light lift text-uppercase" alt="SIGNUP">SIGN UP</a>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <span>Already have an account? <a href="auth-signin.html" title="Sign in" class="text-secondary">Sign in here</a></span>
+                                        <span>Already have an account? <a href="auth-signin.php" title="Sign in" class="text-secondary">Sign in here</a></span>
                                     </div>
                                 </form>
                                 <!-- End Form -->

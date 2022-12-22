@@ -234,7 +234,7 @@ curl_close($curl);
                                         </div>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <button type="submit" class="btn btn-lg btn-block btn-light lift text-uppercase" name="login" atl="signin">SIGN IN</button>
+                                        <button type="submit" class="btn btn-lg btn-block btn-light lift text-uppercase" >SIGN IN</button>
                                     </div>
                                     <div class="col-12 text-center mt-4">
                                         <span>Don't have an account yet? <a href="auth-signup.html" class="text-secondary">Sign up here</a></span>

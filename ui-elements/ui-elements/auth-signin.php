@@ -27,5 +27,5 @@ s0.parentNode.insertBefore(s1,s0);
                      
 
 </body>
-<!-- Mirrored from pixelwibes.com/template/ebazar/html/dist/ui-elements/ui-elements/auth-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:18:58 GMT -->
+<!-- Mirrored from pixelwibes.com/template/ebazar/html/dist/auth-signin.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:18:58 GMT -->
 </html>

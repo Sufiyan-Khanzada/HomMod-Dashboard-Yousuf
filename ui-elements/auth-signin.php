@@ -66,7 +66,7 @@
                                             <div class="form-label">
                                                 <span class="d-flex justify-content-between align-items-center">
                                                     Password
-                                                    <a class="text-secondary" href="auth-password-reset.html">Forgot Password?</a>
+                                                    <a class="text-secondary" href="auth-password-reset.php">Forgot Password?</a>
                                                 </span>
                                             </div>
                                             <input type="password" class="form-control form-control-lg" placeholder="***************">
@@ -81,10 +81,10 @@
                                         </div>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <a href="index.html" class="btn btn-lg btn-block btn-light lift text-uppercase" atl="signin">SIGN IN</a>
+                                        <a href="index.php" class="btn btn-lg btn-block btn-light lift text-uppercase" atl="signin">SIGN IN</a>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <span>Don't have an account yet? <a href="auth-signup.html" class="text-secondary">Sign up here</a></span>
+                                        <span>Don't have an account yet? <a href="auth-signup.php" class="text-secondary">Sign up here</a></span>
                                     </div>
                                 </form>
                                 <!-- End Form -->

@@ -18,36 +18,36 @@
 <?php
 $msg="";
 // include_once 'constant.php';
-$baseurlapi="https://homemod.code7labs.com/api/";
-$url = $baseurlapi."login";
+// $baseurlapi="https://homemod.code7labs.com/api/";
+// $url = $baseurlapi."login";
 
-$curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+// $curl = curl_init();
+// curl_setopt($curl, CURLOPT_URL, $url);
+// curl_setopt($curl, CURLOPT_POST, true);
+// curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-if(isset($_POST['login'])){
+// if(isset($_POST['login'])){
 
-$email=$_POST['email'];
-$password=$_POST['password'];
+// $email=$_POST['email'];
+// $password=$_POST['password'];
 
 
 
-$headers = array(
-   "Accept: application/json",
-   "Content-Type: application/json",
-);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+// $headers = array(
+//    "Accept: application/json",
+//    "Content-Type: application/json",
+// );
+// curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-$data= <<<DATA
-{
+// $data= <<<DATA
+// {
   
-    "email":"$email",
-    "password":"$password"
+//     "email":"$email",
+//     "password":"$password"
     
   
   
-  }
+//  }
 DATA;
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
@@ -86,10 +86,10 @@ if($obj['status']){
   // print_r( $obj['message']);
 
 
-$context = stream_context_create($options);
-$json_data = file_get_contents($url, false, $context);
+// $context = stream_context_create($options);
+// $json_data = file_get_contents($url, false, $context);
 
-$obj1 = json_decode($json_data,true);
+// $obj1 = json_decode($json_data,true);
 
    
     //  $_SESSION['id'] = $obj1['data']['id'];
@@ -161,7 +161,7 @@ $msg='<div class="alert alert-danger" role="alert">
 
 curl_close($curl);
 
-}
+
 ?>
 
 <body>
@@ -234,10 +234,10 @@ curl_close($curl);
                                         </div>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <button type="submit" class="btn btn-lg btn-block btn-light lift text-uppercase" name="login" atl="signin">SIGN IN</button>
+                                        <button type="submit" class="btn btn-lg btn-block btn-light lift text-uppercase" name="" atl="signin">SIGN IN</button>
                                     </div>
                                     <div class="col-12 text-center mt-4">
-                                        <span>Don't have an account yet? <a href="auth-signup.html" class="text-secondary">Sign up here</a></span>
+                                        <span>Don't have an account yet? <a href="auth-signup.php" class="text-secondary">Sign up here</a></span>
                                     </div>
                                 </form>
                                 <!-- End Form -->
