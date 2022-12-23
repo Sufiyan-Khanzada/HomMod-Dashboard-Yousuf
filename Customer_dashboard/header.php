@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HomMod - Admin|Dashboard </title>
+    <title>HomMod - Customer|Dashboard </title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
 
     <!-- plugin css file  -->
@@ -34,13 +34,11 @@
                             <i class="icofont-truck-loaded fs-5"></i> <span>Customers</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="menu-product">
-                                <li><a class="ms-link" href="product-add.php">Products Add</a></li>
-                                <!-- <li><a class="ms-link" href="product-list.php">Product List</a></li>
-                                <li><a class="ms-link" href="product-edit.php">Product Edit</a></li> -->
-                                <li><a class="ms-link" href="product-detail.php">Product Details</a></li>
+                                <!-- <li><a class="ms-link" href="product-add.php">Customer Add</a></li> -->
+                              
+                                <li><a class="ms-link" href="product-detail.php">Customer Update</a></li>
                                 <li><a class="ms-link" href="pendingproduct.php">Product Edit/Delete</a></li>
-                                <!-- <li><a class="ms-link" href="product-cart.php">Shopping Cart</a></li>
-                                <li><a class="ms-link" href="checkout.php">Checkout</a></li> --> 
+                              
                             </ul>
                     </li>
                     <li class="collapsed">
@@ -48,8 +46,8 @@
                             <i class="icofont-truck-loaded fs-5"></i> <span>Order history</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="blogs">
-                                <li><a class="ms-link" href="blogs-add.php">Blogs Add</a></li>
-                                <li><a class="ms-link" href="blogs-details.php">Blogs Edit/Delete</a></li>
+                                <li><a class="ms-link" href="#">Order details</a></li>
+                                <li><a class="ms-link" href="#">Order Edit/Delete</a></li>
                                 
                             </ul>
                     </li>
