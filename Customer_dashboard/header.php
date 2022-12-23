@@ -24,14 +24,14 @@
                 <span class="logo-icon">
                         <i class="bi bi-bag-check-fill fs-4"></i>
                     </span>
-                    <span class="logo-text">HomMod Admin Panel</span>
+                    <span class="logo-text">Customer Panel</span>
                 </a>
                 <!-- Menu: main ul -->
                 <ul class="menu-list flex-grow-1 mt-3">
-                    <li><a class="m-link active" href="index.php"><i class="icofont-home fs-5"></i> <span>Dashboard</span></a></li>
+                    <li><a class="m-link active" href="index.php"><i class="icofont-home fs-5"></i> <span>Home</span></a></li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-product" href="#">
-                            <i class="icofont-truck-loaded fs-5"></i> <span>Products</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <i class="icofont-truck-loaded fs-5"></i> <span>Customers</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="menu-product">
                                 <li><a class="ms-link" href="product-add.php">Products Add</a></li>
@@ -45,7 +45,7 @@
                     </li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#blogs" href="#">
-                            <i class="icofont-truck-loaded fs-5"></i> <span>Blogs</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                            <i class="icofont-truck-loaded fs-5"></i> <span>Order history</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="blogs">
                                 <li><a class="ms-link" href="blogs-add.php">Blogs Add</a></li>
@@ -53,26 +53,26 @@
                                 
                             </ul>
                     </li>
-                    <li class="collapsed">
+                    <!-- <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#bluild_box" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Build_box</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                            <!-- Menu: Sub menu ul -->
+                            Menu: Sub menu ul
                             <ul class="sub-menu collapse" id="bluild_box">
                                 <li><a class="ms-link" href="bluild_box.php">BuildBox Add</a></li>
                                 <li><a class="ms-link" href="bluildbox_details.php">BuildBox Edit/Delete</a></li>
                                 
                             </ul>
-                    </li>
-                    <li class="collapsed">
+                    </li> -->
+                    <!-- <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#Package" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Package</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                            <!-- Menu: Sub menu ul -->
+                            Menu: Sub menu ul
                             <ul class="sub-menu collapse" id="Package">
                                 <li><a class="ms-link" href="package-add.php">Package Add</a></li>
                                 <li><a class="ms-link" href="package_details.php">Package Edit/Delete</a></li>
                                 
                             </ul>
-                    </li>
+                    </li> -->
 
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#Memberships" href="#">
@@ -85,133 +85,11 @@
                             </ul>
                     </li>
                  
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#cards" href="#">
-                            <i class="icofont-truck-loaded fs-5"></i> <span>Cards</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                            <!-- Menu: Sub menu ul -->
-                            <ul class="sub-menu collapse" id="cards">
-                                <li><a class="ms-link" href="add-card.php">Add card</a></li>
-                                <!-- <li><a class="ms-link" href="product-list.php">Product List</a></li>
-                                <li><a class="ms-link" href="product-edit.php">Product Edit</a></li> -->
-                                <li><a class="ms-link" href="#">Edit card</a></li>
-                                <li><a class="ms-link" href="#">All cards</a></li>
-                                <!-- <li><a class="ms-link" href="product-cart.php">Shopping Cart</a></li>
-                                <li><a class="ms-link" href="checkout.php">Checkout</a></li> --> 
-                            </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#categories" href="#">
-                            <i class="icofont-chart-flow fs-5"></i> <span>Categories</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                            <!-- Menu: Sub menu ul -->
-                            <ul class="sub-menu collapse" id="categories">
-                                 <li><a class="ms-link" href="categories-add.php">Categories Add</a></li>
-                                <li><a class="ms-link" href="categorie-list.php">Categories List</a></li>
-                              
-                               
-                            </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#brands" href="#">
-                            <i class="icofont-chart-flow fs-5"></i> <span>Brands</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                            <!-- Menu: Sub menu ul -->
-                            <ul class="sub-menu collapse" id="brands">
-                                 <li><a class="ms-link" href="brands-add.php">Brands Add</a></li>
-                                <li><a class="ms-link" href="brand-details.php">Brands Edit/Delete</a></li>
-                              
-                               
-                            </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-order" href="#">
-                        <i class="icofont-notepad fs-5"></i> <span>Orders</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        <!-- Menu: Sub menu ul -->
-                        <ul class="sub-menu collapse" id="menu-order">
-                            <li><a class="ms-link" href="order-list.php">Orders List</a></li>
-                            <li><a class="ms-link" href="order-details.php">Order Details</a></li>
-                            <li><a class="ms-link" href="order-invoices.php">Order Invoices</a></li>
-                        </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#payment" href="#">
-                        <i class="icofont-notepad fs-5"></i> <span>Payment</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        <!-- Menu: Sub menu ul -->
-                        <ul class="sub-menu collapse" id="payment">
-                            <li><a class="ms-link" href="payment-add-card.php">Add Card</a></li>
-                            <li><a class="ms-link" href="#">Edit Card</a></li>
-                            <li><a class="ms-link" href="#">Remove Card</a></li>
-                        </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#customers-info" href="#">
-                        <i class="icofont-funky-man fs-5"></i> <span>Customers</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        <!-- Menu: Sub menu ul -->
-                        <ul class="sub-menu collapse" id="customers-info">
-                            <li><a class="ms-link" href="customers.php">All Customers</a></li>
-                            <li><a class="ms-link" href="customer-detail.php">Customers Details</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-sale" href="#">
-                        <i class="icofont-sale-discount fs-5"></i> <span>Sales Promotion</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        Menu: Sub menu ul
-                        <ul class="sub-menu collapse" id="menu-sale">
-                            <li><a class="ms-link" href="coupons-list.php">Coupons List</a></li>
-                            <li><a class="ms-link" href="coupon-add.php">Coupons Add</a></li>
-                            <li><a class="ms-link" href="coupon-edit.php">Coupons Edit</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-inventory" href="#">
-                        <i class="icofont-chart-histogram fs-5"></i> <span>Inventory</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        Menu: Sub menu ul
-                        <ul class="sub-menu collapse" id="menu-inventory">
-                            <li><a class="ms-link" href="inventory-info.php">Stock List</a></li>
-                            <li><a class="ms-link" href="purchase.php">Purchase</a></li>
-                            <li><a class="ms-link" href="supplier.php">Supplier</a></li>
-                            <li><a class="ms-link" href="returns.php">Returns</a></li>
-                            <li><a class="ms-link" href="department.php">Department</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Componentsone" href="#"><i
-                                class="icofont-ui-calculator"></i> <span>Orders</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                         
-
-                                <!-- Menu: Sub menu ul -->
-                        <ul class="sub-menu collapse" id="menu-Componentsone">
-                            <li><a class="ms-link" href="#">All Orders List</a></li>
-                             <li><a class="ms-link" href="#">Edit/ Delte Order Details</a></li>
-                            <!-- <li><a class="ms-link" href="salaryslip.php">Salary Slip </a></li>
-                            <li><a class="ms-link" href="create-invoice.php">Create Invoice </a></li> --> 
-                        </ul>
-                    </li>
-                    <!-- <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#app" href="#">
-                        <i class="icofont-code-alt fs-5"></i> <span>App</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        Menu: Sub menu ul
-                        <ul class="sub-menu collapse" id="app">
-                            <li><a class="ms-link" href="calendar.php">Calandar</a></li>
-                            <li><a class="ms-link" href="chat.php"> Chat App</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li><a class="m-link" href="store-locator.php"><i class="icofont-focus fs-5"></i> <span>Store Locator</span></a></li> -->
-                    <!-- <li><a class="m-link" href="ui-elements/ui-alerts.php"><i class="icofont-paint fs-5"></i> <span>UI Components</span></a></li> -->
-                    <!-- <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#page" href="#">
-                        <i class="icofont-page fs-5"></i> <span>Other Pages</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        Menu: Sub menu ul
-                        <ul class="sub-menu collapse" id="page">
-                            <li><a class="ms-link" href="admin-profile.php">Profile Page</a></li>
-                            <li><a class="ms-link" href="purchase-plan.php">Price Plan Example</a></li>
-                            <li><a class="ms-link" href="charts.php">Charts Example</a></li>
-                            <li><a class="ms-link" href="table.php">Table Example</a></li>
-                            <li><a class="ms-link" href="forms.php">Forms Example</a></li>
-                            <li><a class="ms-link" href="icon.php">Icons</a></li>
-                            <li><a class="ms-link" href="contact.php">Contact Us</a></li>
-                            <li><a class="ms-link" href="todo-list.php">Todo List</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
+                  
+                 
+                  
+                 
+                
                 <!-- Mirrored from pixelwibes.com/template/ebazar/html/dist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:17:50 GMT -->
                 <!-- Menu: menu collepce btn -->
                 <button type="button" class="btn btn-link sidebar-mini-btn text-light">
