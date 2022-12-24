@@ -45,16 +45,17 @@
                       while($row = mysqli_fetch_assoc($result)){
                         ?>
                         
-                                <!-- <li><a class="ms-link" href="product-detail.php">Customer Update</a></li> -->
-                                <!-- <li><a class="ms-link" href="customers.php">Customer Update</a></li> -->
-                                <!-- <li> <a class="ms-link" href='customers.php?id=<?php echo $row['id']; ?>'>Customer Update</a></li> -->
+                       
                            
                                                   
-                                <li>   <a class="ms-link" href='customers.php?id=<?php echo $row['id'];?>'>Customer Update
-                                                </a></li>
+                                <li><a class="ms-link" href='customers.php?id=<?php echo $row['id'];?>'>Customer Update
+                                            </a></li>
                                                    
-                            </ul>
-                    </li>
+                                                <?php 
+                    }}
+                      
+                      ?>
+    
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#blogs" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Order history</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
@@ -65,10 +66,7 @@
                                 
                             </ul>
                     </li>
-                    <?php 
-                    }}
-                      
-                      ?>
+                    
                     <!-- <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#bluild_box" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Build_box</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
