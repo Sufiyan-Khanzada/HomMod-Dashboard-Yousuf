@@ -13,6 +13,7 @@
 
     <!-- project css file  -->
     <link rel="stylesheet" href="assets/css/ebazar.style.min.css">
+    <?php include 'connection.php'; ?>
 </head>
 <body>
     <div id="ebazar-layout" class="theme-blue">
@@ -28,6 +29,11 @@
                 </a>
                 <!-- Menu: main ul -->
                 <ul class="menu-list flex-grow-1 mt-3">
+                <?php
+                   $sql = "SELECT * FROM  users";
+                   $result = mysqli_query($conn, $sql) or die("Query Un successfully");
+                   if(mysqli_num_rows($result) > 0) {
+                      ?>
                     <li><a class="m-link active" href="index.php"><i class="icofont-home fs-5"></i> <span>Home</span></a></li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-product" href="#">
@@ -35,10 +41,18 @@
                             <!-- Menu: Sub menu ul -->
                             <ul class="sub-menu collapse" id="menu-product">
                                 <!-- <li><a class="ms-link" href="product-add.php">Customer Add</a></li> -->
-                              
-                                <li><a class="ms-link" href="product-detail.php">Customer Update</a></li>
-                                <li><a class="ms-link" href="pendingproduct.php">Product Edit/Delete</a></li>
-                              
+                                <?php
+                      while($row = mysqli_fetch_assoc($result)){
+                        ?>
+                        
+                                <!-- <li><a class="ms-link" href="product-detail.php">Customer Update</a></li> -->
+                                <!-- <li><a class="ms-link" href="customers.php">Customer Update</a></li> -->
+                                <!-- <li> <a class="ms-link" href='customers.php?id=<?php echo $row['id']; ?>'>Customer Update</a></li> -->
+                           
+                                                  
+                                <li>   <a class="ms-link" href='customers.php?id=<?php echo $row['id'];?>'>Customer Update
+                                                </a></li>
+                                                   
                             </ul>
                     </li>
                     <li class="collapsed">
@@ -51,6 +65,10 @@
                                 
                             </ul>
                     </li>
+                    <?php 
+                    }}
+                      
+                      ?>
                     <!-- <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#bluild_box" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Build_box</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>

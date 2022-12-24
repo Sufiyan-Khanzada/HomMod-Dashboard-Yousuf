@@ -1,3 +1,9 @@
+<?php
+
+if(!$_GET['id']==''){
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -18,15 +24,15 @@
                         <div class="border-0 mb-4">
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
                                 <h3 class="fw-bold mb-0">Customers Information</h3>
-                                <div class="col-auto d-flex w-sm-100">
+                                <!-- <div class="col-auto d-flex w-sm-100">
                                     <button type="button" class="btn btn-primary btn-set-task w-sm-100" data-bs-toggle="modal" data-bs-target="#expadd"><i class="icofont-plus-circle me-2 fs-6"></i>Add Customers</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div> <!-- Row end  -->
                     <div class="row clearfix g-3">
                          <?php
-                   $sql = "SELECT * FROM  users";
+                   $sql = "SELECT * FROM  users where id=".$_GET['id'];
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
                       ?>
@@ -71,8 +77,8 @@
                                               
                                                 <td><a href='Edit-customer.php?id=<?php echo $row['id']; ?>' class="text-truncate h-100 d-flex align-items-center"
                                      class="text-alternate">Edit</a></td>
-                                     <td><a href='Delete-customer.php?id=<?php echo $row['id']; ?>' class="text-truncate h-100 d-flex align-items-center"
-                                     class="text-alternate">Delete</a></td>
+                                     <!-- <td><a href='Delete-customer.php?id=<?php echo $row['id']; ?>' class="text-truncate h-100 d-flex align-items-center"
+                                     class="text-alternate">Delete</a></td> -->
   
                                             <td>
                                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -85,7 +91,7 @@
                                            
                       <?php 
                     }}
-                      
+                }
                       ?>
                                         </tbody>
                                     </table>
