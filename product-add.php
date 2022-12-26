@@ -147,10 +147,10 @@
                                             <input type="checkbox" name="isitem_dealbox" value="Yes" />Yes<br />
                                             <input type="checkbox" name="isitem_dealbox" value="No" />No<br />
                                             </div>
-                                            <div class="col-md-6">
+                                            <!-- <div class="col-md-6">
                                                 <label  class="form-label">Attribute Id</label>
                                                 <input type="text" name="stock_available" class="form-control">
-                                            </div>
+                                            </div> -->
                                             <!-- <div class="col-md-12">
                                                 <label class="form-label">Product Identifier URL</label>
                                                 <div class="input-group mb-3">
