@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -26,7 +28,8 @@
                             <div class="card">
                                 <div class="card-body">
                                 <?php
-                   $sql = "SELECT * FROM  membership";
+                                
+                    $sql = "SELECT * FROM  membership where id=".$_GET['id'];
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
                       ?>
@@ -49,7 +52,14 @@
                       while($row = mysqli_fetch_assoc($result)){
                         ?>
                                             <tr>
-                                                <td><strong><?php echo $row['id'];?></strong></td>
+                                                <td>
+                                                    <strong>
+                                                    
+                                                    <?php echo $row['id'];?>
+                                                
+                                                </strong>
+                                                
+                                                </td>
                                                 <td><?php echo $row['first_name'];?></td>
                                                 <td><?php echo $row['last_name'];?></td>
                                                 <td><?php echo $row['email'];?></td>
