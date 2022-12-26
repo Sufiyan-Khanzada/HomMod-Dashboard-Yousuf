@@ -38,6 +38,7 @@
                                                 <th>Normal Price</th>
                                                 <th>Sale Price</th>
                                                 <th>Color</th>
+                                                <th>Dealbox</th>
                                                 <th>Color1</th>
                                                 <th>Color2</th>
                                                 <!-- <th>Color3</th> -->
@@ -63,6 +64,7 @@
                                                 <td><?php echo $row['normal_price'];?></td>
                                                 <td><?php echo $row['sale_price'];?></td>
                                                 <td><?php echo $row['color'];?></td>
+                                                <td><?php echo $row['isitem_dealbox'];?></td>
                                                 <td><?php echo $row['color1'];?></td>
                                                 <td><?php echo $row['color2'];?></td>
                                                 <!-- <td><?php echo $row['color3'];?></td> -->

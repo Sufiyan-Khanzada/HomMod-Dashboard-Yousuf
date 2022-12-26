@@ -16,19 +16,22 @@ $title=$_POST['title'];
 $normal_price=$_POST['normal_price'];
 $sale_price=$_POST['sale_price'];
 $color=$_POST['color'];
-$color1 = $_POST['color1'];
-$color2 = $_POST['color2'];
-$color3 = $_POST['color3'];
-$color4 = $_POST['color4'];
-$color5 = $_POST['color5'];
-$size=$_POST['size'];
-$size1 = $_POST['size1'];
-$size2 = $_POST['size2'];
-$size3 = $_POST['size3'];
-$size4 = $_POST['size4'];
-$size5 = $_POST['size5'];
+$isitem_dealbox = $_POST['isitem_dealbox'];
+// $color1 = $_POST['color1'];
+// $color2 = $_POST['color2'];
+// $color3 = $_POST['color3'];
+// $color4 = $_POST['color4'];
+// $color5 = $_POST['color5'];
+// $size=$_POST['size'];
+// $size1 = $_POST['size1'];
+// $size2 = $_POST['size2'];
+// $size3 = $_POST['size3'];
+// $size4 = $_POST['size4'];
+// $size5 = $_POST['size5'];
 $stock_available=$_POST['stock_available'];
-$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
+// $query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
+$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',isitem_dealbox='$isitem_dealbox',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
+
 $result_query=mysqli_query($conn,$query);
 
 if($result_query){
@@ -124,10 +127,17 @@ $msg="<div class='alert alert-danger'>
                                             <div class="col-md-6">
                                             <label class="form-label">Stock Available</label>
                                                 <input type="text" name="stock_available" class="form-control" value="<?php  echo $row['stock_available']?>">
-
+<br>
+                                                <label  class="form-label">Dealbox</label>
+                                            <div class="col-md-6">
+                                          
+                                           
+                                            <input type="checkbox" name="isitem_dealbox" value="Yes" />Yes<br />
+                                            <input type="checkbox" name="isitem_dealbox" value="No" />No<br />
                                             </div>
+                                            
 
-
+<!-- 
                                             <div class="card">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
                                         <h6 class="m-0 fw-bold">Colors</h6>
@@ -158,8 +168,8 @@ $msg="<div class='alert alert-danger'>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
+                        </div> -->
+                        <!-- <div class="card">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
                                         <h6 class="m-0 fw-bold">Sizes</h6>
                                     </div>
@@ -191,7 +201,7 @@ $msg="<div class='alert alert-danger'>
                                     </div>
                                 </div>
                                            
-                                </div>  
+                                </div>   -->
 
                                             </div>
                                             <div class="row align-items-center">

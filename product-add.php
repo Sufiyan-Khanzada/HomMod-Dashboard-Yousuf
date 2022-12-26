@@ -21,7 +21,7 @@
                         </div>
                     </div> <!-- Row end  -->  
                     
-                    <div class="row g-3 mb-3">
+                    <!-- <div class="row g-3 mb-3">
                         <div class="col-xl-4 col-lg-4">
                             <div class="sticky-lg-top">
                                 <div class="card mb-3">
@@ -55,12 +55,12 @@
                                         </div>
                                     </div>
                                 </div>
-                              
+                               -->
 
                                 
                               
                                
-                              
+<!--                               
                                 <div class="card">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
                                         <h6 class="m-0 fw-bold">Colors</h6>
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         
                         <div class="col-xl-8 col-lg-8">
                             <div class="card mb-3">
@@ -99,7 +99,7 @@
                                     <h6 class="mb-0 fw-bold ">Basic information</h6>
                                 </div>
                                 <div class="card-body">
-                                <!-- <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">   -->
+                                <form class="post-form" action="add-items.php" method="post" enctype="multipart/form-data">  
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Name</label>
@@ -134,9 +134,17 @@
                                                 <label  class="form-label">How To Use</label>
                                                 <input type="text" name= "how_to_use" class="form-control">
                                             </div>
+                                        
                                             <div class="col-md-6">
                                                 <label  class="form-label">Stock Available</label>
                                                 <input type="text" name="stock_available" class="form-control">
+                                            </div>
+                                            <label  class="form-label">Dealbox</label>
+                                            <div class="col-md-6">
+                                          
+                                           
+                                            <input type="checkbox" name="isitem_dealbox" value="Yes" />Yes<br />
+                                            <input type="checkbox" name="isitem_dealbox" value="No" />No<br />
                                             </div>
                                             <!-- <div class="col-md-12">
                                                 <label class="form-label">Product Identifier URL</label>

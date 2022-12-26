@@ -4,6 +4,7 @@
 //  $id = $_POST['id'];
  $title = $_POST['title'];
  $color = $_POST['color'];
+ $isitem_dealbox = $_POST['isitem_dealbox'];
  $color1 = $_POST['color1'];
  $color2 = $_POST['color2'];
  $color3 = $_POST['color3'];
@@ -55,8 +56,8 @@ move_uploaded_file($_FILES['file8']['tmp_name'],$target_dir.$name);
  
 
 
-    $sql = "INSERT INTO items (title,color,color1,color2,color3,color4,color5,size,size1,size2,size3,size4,size5,short_description,long_description,sale_price,normal_price,how_to_use,stock_available,image1,image2,image3,image4,image5,image6,image7,image8,image9) VALUES 
-    (' $title',' $color',' $color1',' $color2',' $color3',' $color4',' $color5',' $size',' $size1',' $size2',' $size3',' $size4',' $size5',' $short_description',' $long_description ',' $sale_price',' $normal_price','$how_to_use',' $stock_available',' $target_file',' $target_file1',' $target_file2',' $target_file3',' $target_file4',' $target_file5',' $target_file6',' $target_file7',' $target_file8')";
+    $sql = "INSERT INTO items (title,color,isitem_dealbox,color1,color2,color3,color4,color5,size,size1,size2,size3,size4,size5,short_description,long_description,sale_price,normal_price,how_to_use,stock_available,image1,image2,image3,image4,image5,image6,image7,image8,image9) VALUES 
+    (' $title',' $color','$isitem_dealbox',' $color1',' $color2',' $color3',' $color4',' $color5',' $size',' $size1',' $size2',' $size3',' $size4',' $size5',' $short_description',' $long_description ',' $sale_price',' $normal_price','$how_to_use',' $stock_available',' $target_file',' $target_file1',' $target_file2',' $target_file3',' $target_file4',' $target_file5',' $target_file6',' $target_file7',' $target_file8')";
     $result = mysqli_query($conn, $sql);
     if($result === TRUE){
         echo "<script type=text/javascript>alert('Items Added');</script>";
