@@ -139,12 +139,17 @@
                                                 <label  class="form-label">Stock Available</label>
                                                 <input type="text" name="stock_available" class="form-control">
                                             </div>
+                                           
                                             <label  class="form-label">Dealbox</label>
                                             <div class="col-md-6">
                                           
                                            
                                             <input type="checkbox" name="isitem_dealbox" value="Yes" />Yes<br />
                                             <input type="checkbox" name="isitem_dealbox" value="No" />No<br />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Attribute Id</label>
+                                                <input type="text" name="stock_available" class="form-control">
                                             </div>
                                             <!-- <div class="col-md-12">
                                                 <label class="form-label">Product Identifier URL</label>
