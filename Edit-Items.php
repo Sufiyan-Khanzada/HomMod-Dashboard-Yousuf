@@ -30,7 +30,7 @@ $isitem_dealbox = $_POST['isitem_dealbox'];
 // $size5 = $_POST['size5'];
 $stock_available=$_POST['stock_available'];
 // $query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
-$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',isitem_dealbox='$isitem_dealbox',color='$color',color1='$color1',color2='$color2',color3='$color3',color4='$color4',color5='$color5',size='$size',size1='$size1',size2='$size2',size3='$size3',size4='$size4',size5='$size5',stock_available='$stock_available' WHERE id='$upd_id'";
+$query="UPDATE items SET title='$title',normal_price='$normal_price',sale_price='$sale_price',isitem_dealbox='$isitem_dealbox',color='$color',size='$size',stock_available='$stock_available' WHERE id='$upd_id'";
 
 $result_query=mysqli_query($conn,$query);
 

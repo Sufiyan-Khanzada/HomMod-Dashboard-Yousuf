@@ -39,14 +39,14 @@
                                                 <th>Sale Price</th>
                                                 <th>Color</th>
                                                 <th>Dealbox</th>
-                                                <th>Color1</th>
-                                                <th>Color2</th>
+                                                <!-- <th>Color1</th>
+                                                <th>Color2</th> -->
                                                 <!-- <th>Color3</th> -->
                                                 <!-- <th>Color4</th>
                                                 <th>Color5</th> -->
-                                                <th>Size</th>
+                                                <!-- <th>Size</th>
                                                 <th>Size1</th>
-                                                <th>Size2</th>
+                                                <th>Size2</th> -->
                                                 <!-- <th>Size3</th> -->
                                                 <!-- <th>Size4</th>
                                                 <th>Size5</th> -->
@@ -65,14 +65,14 @@
                                                 <td><?php echo $row['sale_price'];?></td>
                                                 <td><?php echo $row['color'];?></td>
                                                 <td><?php echo $row['isitem_dealbox'];?></td>
-                                                <td><?php echo $row['color1'];?></td>
-                                                <td><?php echo $row['color2'];?></td>
+                                                <!-- <td><?php echo $row['color1'];?></td>
+                                                <td><?php echo $row['color2'];?></td> -->
                                                 <!-- <td><?php echo $row['color3'];?></td> -->
                                                 <!-- <td><?php echo $row['color4'];?></td>
                                                 <td><?php echo $row['color5'];?></td> -->
-                                                <td><?php echo $row['size'];?></td>
+                                                <!-- <td><?php echo $row['size'];?></td>
                                                 <td><?php echo $row['size1'];?></td>
-                                                <td><?php echo $row['size2'];?></td>
+                                                <td><?php echo $row['size2'];?></td> -->
                                                 <!-- <td><?php echo $row['size3'];?></td> -->
                                                 <!-- <td><?php echo $row['size4'];?></td>
                                                 <td><?php echo $row['size5'];?></td> -->
