@@ -118,10 +118,8 @@
                                                 <label  class="form-label">Size</label>
                                                 <input type="text" name="size" class="form-control">
                                             </div>
-                                            <div class="col-md-12">
-                                                <label  class="form-label">Long Description</label>
-                                                <textarea type="text"  name="long_description" class="form-control"></textarea>
-                                            </div>
+                                           
+                                           
                                             <div class="col-md-6">
                                                 <label  class="form-label">Normal Price</label>
                                                 <input type="text" name="normal_price" class="form-control">
@@ -134,12 +132,42 @@
                                                 <label  class="form-label">How To Use</label>
                                                 <input type="text" name= "how_to_use" class="form-control">
                                             </div>
+                                            <div class="col-md-6">
+                                                <label  class="form-label">Long Description</label>
+                                                <textarea type="text"  name="long_description" class="form-control"></textarea>
+                                            </div>
                                         
                                             <div class="col-md-6">
-                                                <label  class="form-label">Stock Anvailable</label>
+                                                <label  class="form-label">Stock Available</label>
                                                 <input type="text" name="stock_available" class="form-control">
                                             </div>
-                                           
+                                          
+                                            <div class="col-md-6">
+                                            <label  class="form-label">Brand name</label>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="brand_name"  size="1" multiple  tabindex="1">
+                                            <?php
+                   $sql = "SELECT * FROM  brands";
+                   $result = mysqli_query($conn, $sql) or die("Query Un successfully");
+                   if(mysqli_num_rows($result) > 0) {
+                      ?>  
+                    
+                <?php
+                while($row = mysqli_fetch_assoc($result)){
+             ?>
+                                                <!-- <label  class="form-label">Items</label> -->
+                                                <option value=<?php echo $row['brand_name'];?>><?php echo $row['brand_name'];?></option>
+                                                <!-- <input type="text" name="post_status" class="form-control"> -->
+                                                <?php 
+                    }
+                       
+                       
+                   }
+                      
+                      ?>  
+                    
+                                                </select>
+                                            </div>
+                                       
                                             <label  class="form-label">Dealbox</label>
                                             <div class="col-md-6">
                                           
@@ -166,7 +194,7 @@
                                             </div>
                                         </div>
                                  
-                                    
+<!--                                     
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Images</h6>
                                 </div>
@@ -217,7 +245,7 @@
                                                 <label class="form-label">Product Images Upload</label>
                                                 <small class="d-block text-muted mb-2">Only portrait or square images, 2M max and 2000px max-height.</small>
                                                 <input type="file" name="file8"  id="file8" class="dropify" data-allowed-formats="portrait square" data-max-file-size="2M" data-max-height="2000">
-                                            </div>
+                                            </div> -->
                                        <div>
                                        <button type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
                             <span>Create</span>
@@ -225,7 +253,7 @@
                             </button>
                             </form>
                                        </div>
-                                     
+                                      
                                             <!-- <div class="col-md-12">
                                                 <label  class="form-label w-100">Select Product Color</label>
                                                 <input type="color" id="color">

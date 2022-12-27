@@ -98,6 +98,10 @@
                                                 <input type="text" name ="main_category" class="form-control">
                                             </div>
                                             <div class="col-md-6">
+                                                <label  class="form-label">Category Select</label>
+                                                <input type="text" name ="user" class="form-control">
+                                            </div>
+                                            <!-- <div class="col-md-6">
                                                <br>
                                                <br>
                                                 <label class="form-label">Category Select</label>
@@ -111,8 +115,12 @@
                                                       <br>
                                                     <div class="mb-3"></div>
                                                     </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-md-6">
+                                                <label  class="form-label">Sub Category</label>
+                                                <input type="text" name ="sub_category" class="form-control">
+                                            </div>
+                                            <!-- <div class="col-md-6">
                                                <br>
                                                <br>
                                                 <label class="form-label">Sub Category</label>
@@ -128,13 +136,17 @@
                                                       <br>
                                                     <div class="mb-3"></div>
                                                     </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-md-6">
+                                                <label  class="form-label">Sub Category1</label>
+                                                <input type="text" name ="sub_category1" class="form-control">
+                                            </div>
+                                            <!-- <div class="col-md-6">
                                                <br>
                                                <br>
                                                 <label class="form-label">Sub Category1</label>
-                                             
-                                                <div class="form-label" data-childselector="span">
+                                              -->
+                                                <!-- <div class="form-label" data-childselector="span">
 
                                                     <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="sub_category1" >
                                                       <option>Sub Category1</option>  
@@ -142,6 +154,7 @@
                                                         <option value="C-White">C-White</option>
                                                         <option value="C-Black">C-Black</option>
                                                       </select>
+                                                       -->
                                                       <br>
                                                     <div class="mb-3"></div>
                                                     </div>
