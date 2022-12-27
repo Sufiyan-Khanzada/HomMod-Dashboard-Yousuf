@@ -136,7 +136,7 @@
                                             </div>
                                         
                                             <div class="col-md-6">
-                                                <label  class="form-label">Stock Available</label>
+                                                <label  class="form-label">Stock Anvailable</label>
                                                 <input type="text" name="stock_available" class="form-control">
                                             </div>
                                            
