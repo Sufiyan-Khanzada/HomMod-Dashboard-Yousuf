@@ -25,8 +25,10 @@
 //  $image1= $_POST['image1']; 
 $name=$_FILES['file']['name'];
 $target_dir='product_images/';
+
 $target_file = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file"]["name"]);
 move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
+
 //  $image2= $_POST['image2'];  
 $target_file1 = "http://localhost/HomMod-Dashboard-Yousuf/".$target_dir . basename($_FILES["file1"]["name"]);
 move_uploaded_file($_FILES['file1']['tmp_name'],$target_dir.$name);
