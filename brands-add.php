@@ -54,14 +54,14 @@
                                         <!-- banner1 -->
                                     
                                     
-                    <div class="row g-3 mb-3">
+                    <!-- <div class="row g-3 mb-3">
                     <div class="col-xl-10 col-lg-10">
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Banner 1 </h6>
                                 </div>
                                 <div class="card-body">
-                                <!-- <form class="post-form" action="insert-brands.php" method="post" enctype="multipart/form-data">   -->
+                            
                                         <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -85,17 +85,17 @@
                                       
                                               </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                          <!-- Banner #2 -->
                                     
-                    <div class="row g-3 mb-3">
+                    <!-- <div class="row g-3 mb-3">
                     <div class="col-xl-10 col-lg-10">
                             <div class="card mb-3">
                                 <div class="card-header py-2 d-flex justify-content-between bg-transparent border-bottom-0">
                                     <h6 class="mb-0 fw-bold ">Banner 2</h6>
                                 </div>
                                 <div class="card-body">
-                                <!-- <form class="post-form" action="insert-brands.php" method="post" enctype="multipart/form-data">   -->
+                                
                                 <div class="row g-3 align-items-center">
                                             <div class="col-md-6">
                                                 <label  class="form-label">Banner Text</label>
@@ -119,11 +119,11 @@
                                       
                                               </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     
                                     
      <!-- Banner #3 -->
-                                        <div class="row g-3 mb-3">
+                                        <!-- <div class="row g-3 mb-3">
                                         <div class="col-xl-10 col-lg-10">
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
@@ -153,9 +153,9 @@
                                       
                                               </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                          <!-- Banner #4 -->
-                    <div class="row g-3 mb-3">
+                    <!-- <div class="row g-3 mb-3">
                         <div class="col-xl-10 col-lg-10">
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
@@ -185,10 +185,10 @@
                                       
                                               </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                               
                                         <!-- Banner #5 -->
-                                    
+<!--                                     
                     <div class="row g-3 mb-3">
                         <div class="col-xl-10 col-lg-10">
                             <div class="card mb-3">
@@ -217,7 +217,7 @@
                                             </div>                        
                                             </div>
                                         </div>
-                                       <div>
+                                       <div> -->
                                        <button style="margin-left:20px" type="submit" value="Save" class="btn btn-icon btn-icon-end btn-primary" >
                                         
                                          <span>Create</span>
