@@ -29,11 +29,11 @@
                 </a>
                 <!-- Menu: main ul -->
                 <ul class="menu-list flex-grow-1 mt-3">
-                <?php
+                <!-- <?php
                    $sql = "SELECT * FROM  users";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
-                      ?>
+                      ?> -->
                     <li><a class="m-link active" href="index.php"><i class="icofont-home fs-5"></i> <span>Home</span></a></li>
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-product" href="#">
@@ -42,8 +42,8 @@
                             <ul class="sub-menu collapse" id="menu-product">
                                 <!-- <li><a class="ms-link" href="product-add.php">Customer Add</a></li> -->
                                 <?php
-                      while($row = mysqli_fetch_assoc($result)){
-                        ?>
+                    //   while($row = mysqli_fetch_assoc($result)){
+                    //     ?>
                         
                        
                            
@@ -51,10 +51,10 @@
                                 <li><a class="ms-link" href='customers.php?id=<?php echo $row['id'];?>'>Customer Update
                                             </a></li>
                                                    
-                                                <?php 
-                    }}
+                                                <!-- <?php 
+                    }
                       
-                      ?>
+                      ?> -->
     
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#blogs" href="#">
@@ -87,18 +87,18 @@
                                 
                             </ul>
                     </li> -->
-                    <?php
+                    <!-- <?php
                    $sql = "SELECT * FROM  membership";
                    $result = mysqli_query($conn, $sql) or die("Query Un successfully");
                    if(mysqli_num_rows($result) > 0) {
-                      ?>
+                      ?> -->
                     <li class="collapsed">
                         <a class="m-link" data-bs-toggle="collapse" data-bs-target="#Memberships" href="#">
                             <i class="icofont-truck-loaded fs-5"></i> <span>Memberships</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                             <!-- Menu: Sub menu ul -->
-                            <?php
+                            <!-- <?php
                       while($row = mysqli_fetch_assoc($result)){
-                        ?>
+                        ?> -->
                             <ul class="sub-menu collapse" id="Memberships">
                             <li><a class="ms-link" href='memberships_details.php?id=<?php echo $row['id'];?>'>Membership Edit/Delete
                                             </a></li>
@@ -108,11 +108,11 @@
                     </li>
                  
                   
-                    <?php 
+                    <!-- <?php 
                     }}
                       
                       ?>
-                  
+                   -->
                  
                 
                 <!-- Mirrored from pixelwibes.com/template/ebazar/html/dist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 18:17:50 GMT -->
